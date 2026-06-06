@@ -11,6 +11,13 @@ export const metadata = {
   },
   description:
     "DeRivian Care Ltd provides personalised supported living services for adults across London — empowering people to live independently, build life skills and thrive in their own homes.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 }
 
 export default function RootLayout({ children }) {

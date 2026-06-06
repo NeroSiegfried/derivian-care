@@ -190,8 +190,46 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* For commissioners & referrers */}
+      <section className="section scheme-2" id="referrers">
+        <div className="container">
+          <div className="split reveal">
+            <div>
+              <p className="eyebrow">For professionals</p>
+              <h2>Commissioners and referrers</h2>
+              <p className="lead" style={{ marginBottom: "1.5rem" }}>
+                We work with local authority commissioners, social workers, NHS continuing healthcare teams, care coordinators and court-appointed deputies. Our referral process is straightforward, our documentation is thorough, and we work to your placement timelines.
+              </p>
+              <div className="split__grid2">
+                <div>
+                  <div style={{ marginBottom: ".85rem" }}><svg className="icon icon--lg" aria-hidden="true"><use href="#i-shield" /></svg></div>
+                  <h6 style={{ fontWeight: 700, marginBottom: ".4rem" }}>CQC aligned</h6>
+                  <p>All services meet the five fundamental CQC standards. Our governance and audit frameworks are available on request.</p>
+                </div>
+                <div>
+                  <div style={{ marginBottom: ".85rem" }}><svg className="icon icon--lg" aria-hidden="true"><use href="#i-clock" /></svg></div>
+                  <h6 style={{ fontWeight: 700, marginBottom: ".4rem" }}>Responsive placements</h6>
+                  <p>We understand urgency. Our assessment and onboarding process is designed to move at the pace the situation requires.</p>
+                </div>
+              </div>
+              <div className="actions">
+                <Link className="btn btn--primary" href="/contact">Make a referral</Link>
+                <Link className="btn btn--link" href="/contact">
+                  Request a service specification <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
+                </Link>
+              </div>
+            </div>
+            <div className="split__media">
+              <div className="img-frame ratio-4-3">
+                <img src="/images/feature-1.jpg" alt="A support coordinator reviewing a referral with a colleague" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Band */}
-      <section className="section scheme-2">
+      <section className="section scheme-3">
         <div className="container">
           <div className="band reveal">
             <div className="band__text">

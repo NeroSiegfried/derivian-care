@@ -916,6 +916,15 @@ h6 { font-family: var(--font-head); font-size: var(--text-h6); }
   background: color-mix(in srgb, var(--fountain-blue), transparent 78%);
   color: var(--fountain-blue);
   border: 2px solid color-mix(in srgb, var(--fountain-blue), transparent 55%);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.member__avatar--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 .member h5 {
   font-size: var(--text-large);
@@ -1123,7 +1132,7 @@ h6 { font-family: var(--font-head); font-size: var(--text-h6); }
 /* CTA band */
 .band {
   border: 2px solid var(--border);
-  border-radius: var(--radius-card);
+  border-radius: 0;
   padding: clamp(2rem, 1.5rem + 2vw, 3.5rem);
   display: flex;
   flex-wrap: wrap;

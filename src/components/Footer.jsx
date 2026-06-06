@@ -40,9 +40,9 @@ export default function Footer() {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand">
+            {/* Swap logo-dark.svg for your final logo file when ready */}
             <Link className="logo" href="/" aria-label="DeRivian Care home">
-              <span className="logo__mark" aria-hidden="true">D</span>
-              <span className="logo__word">DeRivian<small>Care</small></span>
+              <img src="/images/logo-dark.svg" alt="DeRivian Care" width="136" height="32" style={{ display: "block" }} />
             </Link>
             <ul className="footer__contact footer__col">
               <li>

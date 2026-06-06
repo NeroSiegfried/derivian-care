@@ -55,27 +55,34 @@ export default async function HomePage() {
               We listen first, then act. Every person we support has their own story, their own goals and their own vision for how they want to live — and we build our support around that vision, not the other way round.
             </p>
           </div>
-          <div className="grid grid--3">
+          <div className="grid grid--4">
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-0.jpg" alt="Three people relaxing and laughing together in a comfortable living room" />
+                <img src="/images/feature-2.jpg" alt="A support worker and resident building a support plan together at a table" />
               </div>
               <h4>Co-produced support plans</h4>
-              <p>We work with you — not for you. Your goals, your routine and your definition of independence shape every support plan, reviewed regularly so it stays relevant as you grow.</p>
+              <p>We develop every support plan with you — not for you. Your goals, your routines and your vision for independence shape every decision we make.</p>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-1.jpg" alt="Two colleagues reviewing support notes together at a desk" />
+                <img src="/images/feature-1.jpg" alt="Two support workers reviewing notes together — a small, consistent team" />
               </div>
-              <h4>Experienced &amp; consistent team</h4>
-              <p>A familiar team builds the relationships and trust that make real progress possible. We invest in our staff so they stay — and so you always have people around you who truly know you.</p>
+              <h4>Consistent, familiar team</h4>
+              <p>A small, consistent team builds the real relationships that make progress possible. We invest in our staff so they stay — and so you always have people who truly know you.</p>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-2.jpg" alt="A support worker and resident reviewing a plan together on a sofa" />
+                <img src="/images/feature-0.jpg" alt="A resident confidently going about their daily routine independently" />
               </div>
               <h4>Empowering independence</h4>
-              <p>We step back where we can, encourage where we should, and support where it counts — so you build confidence, develop skills and live life on your own terms.</p>
+              <p>We step back where we can, encourage where we should, and support where it counts — so you grow in confidence and live life on your own terms.</p>
+            </article>
+            <article className="feature reveal">
+              <div className="img-frame ratio-16-9">
+                <img src="/images/feature-3.jpg" alt="A support worker and resident from diverse backgrounds sharing a warm moment in the community" />
+              </div>
+              <h4>Inclusive &amp; culturally aware</h4>
+              <p>We respect your culture, your language and your faith. London&apos;s diversity shapes how we work — every support plan honours the whole person, not just their assessed needs.</p>
             </article>
           </div>
         </div>
@@ -169,6 +176,19 @@ export default async function HomePage() {
           </div>
           <div className="actions" style={{ justifyContent: "center", marginTop: "var(--section-y)" }}>
             <Link className="btn btn--secondary" href="/blog">View blogs</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Referrers band */}
+      <section className="section scheme-2">
+        <div className="container">
+          <div className="band reveal">
+            <div className="band__text">
+              <h3>Referring someone to us?</h3>
+              <p className="lead">We work with local authority commissioners, social workers, NHS continuing healthcare teams and self-funders. Our referral process is straightforward and we work to your timeline.</p>
+            </div>
+            <Link className="btn btn--primary" href="/contact">Make a referral</Link>
           </div>
         </div>
       </section>

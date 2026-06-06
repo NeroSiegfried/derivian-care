@@ -81,14 +81,14 @@ export default function AboutPage() {
             <div className="deriway__intro-wrap">
               <div className="deriway__intro reveal">
                 <p className="eyebrow">Excellence</p>
-                <h2>The DeRivian way sets us apart</h2>
+                <h2>Four principles that define the DeRivian way</h2>
                 <p className="lead">
-                  We invest deeply in our team because they are the heart of everything we do. Strong, supported staff deliver the consistent, person-centred support that commissioners trust and the people we support deserve.
+                  These aren&apos;t operational policies — they&apos;re the commitments that set us apart. Together they explain why the people we support, their families and commissioning bodies trust us to deliver.
                 </p>
                 <div className="actions">
                   <Link className="btn btn--secondary" href="#team">Meet the team</Link>
                   <Link className="btn btn--link" href="/contact">
-                    Join our team <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
+                    Work with us <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
                   </Link>
                 </div>
               </div>
@@ -98,33 +98,33 @@ export default function AboutPage() {
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>01</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/feature-1.jpg" alt="A new team member being guided through care notes during induction training" loading="lazy" /></div>
-                <h3>Comprehensive induction</h3>
-                <p>Every team member begins with thorough training that covers our values, safeguarding protocols and individual client needs. We set the foundation for excellence from day one.</p>
+                <div className="img-frame ratio-3-2"><img src="/images/feature-2.jpg" alt="A support worker and resident building a support plan together at a table" loading="lazy" /></div>
+                <h3>Co-produced support plans</h3>
+                <p>We develop every support plan with the person — not for them. Your goals, your routines and your definition of independence shape every decision, with regular reviews as your ambitions grow.</p>
               </div>
             </article>
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>02</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/feature-4.jpg" alt="A carer and a colleague discussing professional development together" loading="lazy" /></div>
-                <h3>Ongoing development</h3>
-                <p>Professional growth doesn&apos;t stop after induction. We provide continuous learning opportunities that keep our staff skilled, confident and genuinely engaged in their work.</p>
+                <div className="img-frame ratio-3-2"><img src="/images/feature-0.jpg" alt="A familiar support worker greeting a resident warmly at their front door" loading="lazy" /></div>
+                <h3>Consistent, familiar teams</h3>
+                <p>We assign a small, consistent team wherever possible. Continuity isn&apos;t just reassuring — it&apos;s what enables genuine relationships and the kind of trust that makes real progress possible for the people we support.</p>
               </div>
             </article>
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>03</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/feature-2.jpg" alt="A manager and carer reviewing a care plan together during supervision" loading="lazy" /></div>
-                <h3>Regular supervision</h3>
-                <p>Our managers meet consistently with staff to discuss challenges, celebrate successes and ensure accountability. This creates the support structure that makes great care possible.</p>
+                <div className="img-frame ratio-3-2"><img src="/images/feature-3.jpg" alt="A support worker and resident sharing a moment together in the community" loading="lazy" /></div>
+                <h3>Inclusive &amp; culturally aware</h3>
+                <p>London&apos;s diversity is reflected in the people we support. We tailor every aspect of our approach to respect culture, language, faith and identity — because truly person-centred support honours the whole person.</p>
               </div>
             </article>
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>04</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/feature-0.jpg" alt="A relaxed, happy care team sharing a light moment together" loading="lazy" /></div>
-                <h3>Fair, competitive pay</h3>
-                <p>Fair pay reflects the value of the work. When staff feel valued, they stay — and continuity of care strengthens the relationships that matter most to the people we support.</p>
+                <div className="img-frame ratio-3-2"><img src="/images/feature-1.jpg" alt="A support worker reviewing digital support records on a tablet" loading="lazy" /></div>
+                <h3>Digital systems &amp; governance</h3>
+                <p>Our electronic support records, scheduling tools and quality audit frameworks deliver real-time transparency and consistent CQC alignment — so every stakeholder always has an accurate, up-to-date picture.</p>
               </div>
             </article>
           </div>
@@ -144,7 +144,13 @@ export default function AboutPage() {
           <div className="team">
             {siteConfig.team.map((member) => (
               <article key={member.initials} className="member reveal">
-                <div className="member__avatar">{member.initials}</div>
+                {member.image ? (
+                  <div className="member__avatar member__avatar--photo">
+                    <img src={member.image} alt={member.name} />
+                  </div>
+                ) : (
+                  <div className="member__avatar">{member.initials}</div>
+                )}
                 <h5>{member.name}</h5>
                 <p className="member__role">{member.role}</p>
                 <p>{member.bio}</p>

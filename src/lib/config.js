@@ -30,6 +30,7 @@ export const siteConfig = {
       name: "Deborah Brown",
       role: "Director",
       email: "deborah.brown@derivian.co.uk",
+      // image: "/images/team-db.jpg",  // uncomment and add photo to public/images/ when ready
       bio: "Deborah brings extensive experience in adult social care and a fierce dedication to safeguarding. Her leadership keeps accountability, co-production and strict CQC alignment at the centre of everything we do.",
     },
     {
@@ -37,6 +38,7 @@ export const siteConfig = {
       name: "Rilindis Njotu",
       role: "Director",
       email: "rilindis.njotu@derivian.co.uk",
+      // image: "/images/team-rn.jpg",
       bio: "Rilindis combines deep support-planning knowledge with compassionate leadership. She holds every team member to the highest standards of dignity, choice and safety for the people we support.",
     },
     {
@@ -44,6 +46,7 @@ export const siteConfig = {
       name: "Vivienne Ewah",
       role: "Registered Manager",
       email: "vivienne.ewah@derivian.co.uk",
+      // image: "/images/team-ve.jpg",
       bio: "Vivienne's regulatory expertise and hands-on approach build trust with the people we support, their families and commissioning bodies. She ensures DeRivian operates with integrity in every aspect of service delivery.",
     },
   ],

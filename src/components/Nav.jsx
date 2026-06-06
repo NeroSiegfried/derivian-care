@@ -44,9 +44,9 @@ export default function Nav() {
       <header className="nav">
         <div className="nav__inner">
           <div className="nav__primary">
+            {/* Swap logo-dark.svg for your final logo file when ready */}
             <Link className="logo" href="/" aria-label="DeRivian Care — home">
-              <span className="logo__mark" aria-hidden="true">D</span>
-              <span className="logo__word">DeRivian<small>Care</small></span>
+              <img src="/images/logo-dark.svg" alt="DeRivian Care" width="136" height="32" style={{ display: "block" }} />
             </Link>
             <button
               className="nav__toggle"
