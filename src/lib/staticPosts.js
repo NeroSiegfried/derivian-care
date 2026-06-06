@@ -1,27 +1,27 @@
 export const STATIC_POSTS = [
   {
     id: 1,
-    slug: "building-trust-through-consistent-care",
-    title: "Building trust through consistent care",
+    slug: "building-trust-through-consistent-support",
+    title: "Building trust through consistent support",
     excerpt:
-      "Why familiar faces and steady routines are the real foundation of independence — and how continuity of care changes everything for the people we support.",
+      "Why familiar faces and steady routines are the real foundation of independence — and how continuity of support changes everything for the people we work with.",
     content: `
-      <p class="lede">Ask anyone who relies on care at home what matters most, and few will lead with clinical tasks. They talk about the person who knows how they take their tea, who remembers the name of their grandchild, who notices when something isn't quite right. They talk about trust — and trust is built on consistency.</p>
+      <p class="lede">Ask anyone who relies on supported living what matters most, and few will lead with tasks. They talk about the person who knows how they take their tea, who remembers the name of their best friend, who notices when something isn't quite right. They talk about trust — and trust is built on consistency.</p>
 
       <h2>Why continuity changes everything</h2>
-      <p>In domiciliary care, the same small team visiting day after day isn't a luxury — it's the foundation of safe, effective support. A familiar carer spots subtle changes early: a slight loss of appetite, a new hesitation on the stairs, a quieter mood. These observations, gathered over weeks rather than minutes, are what keep people safe and well at home.</p>
-      <p>Continuity also protects dignity. When you've explained your routine and preferences once, you shouldn't have to explain them again to a stranger every visit. Consistent carers carry that understanding with them, so support feels personal rather than procedural.</p>
+      <p>In supported living, the same small team working with you day after day isn't a luxury — it's the foundation of safe, effective support. A familiar support worker spots subtle changes early: a slight withdrawal from activities, a new hesitation about going out, a quieter mood that doesn't lift. These observations, gathered over weeks rather than minutes, are what keep people safe and help them thrive.</p>
+      <p>Continuity also protects dignity. When you've explained your routine and preferences once, you shouldn't have to explain them again to a stranger every shift. Consistent support workers carry that understanding with them, so support feels personal rather than procedural.</p>
 
       <h3>What consistency looks like in practice</h3>
-      <p>At DeRivian, we build schedules around keeping the same small team in your life wherever possible. We invest in our staff — through thorough induction, ongoing development, regular supervision and fair pay — precisely because people who feel valued stay. Low staff turnover isn't just good for our team; it's what makes continuity of care possible for the people we support.</p>
+      <p>At DeRivian, we build rotas around keeping the same small team in your life wherever possible. We invest in our staff — through thorough induction, ongoing development, regular supervision and fair pay — precisely because people who feel valued stay. Low staff turnover isn't just good for our team; it's what makes continuity of support possible for the people we support.</p>
 
-      <blockquote>"You can't build trust in a single visit. You build it in the hundredth — when someone walks in, already knowing exactly how you like things done."</blockquote>
+      <blockquote>"You can't build trust in a single shift. You build it in the hundredth — when someone walks in already knowing exactly how you like things done."</blockquote>
 
       <h3>Independence is the goal</h3>
-      <p>Consistency and independence go hand in hand. When a carer truly knows you, they know when to step back and let you do something yourself, and when to gently offer a hand. That judgement — earned through familiarity — is what helps people grow in confidence rather than become dependent.</p>
-      <p>That's the heart of person-centred care: not a fixed list of tasks, but a relationship that adapts as you do.</p>
+      <p>Consistency and independence go hand in hand. When a support worker truly knows you, they know when to step back and let you do something yourself, and when to gently offer a hand. That judgement — earned through familiarity — is what helps people grow in confidence rather than become dependent.</p>
+      <p>That's the heart of person-centred support: not a fixed list of tasks, but a relationship that adapts as you do.</p>
     `,
-    category: "Care Tips",
+    category: "Support Tips",
     categoryKey: "tips",
     featured: true,
     authorName: "Vivienne Ewah",
@@ -30,32 +30,32 @@ export const STATIC_POSTS = [
     readTime: 4,
     publishedAt: "2026-03-12",
     imageUrl: "/images/blog-0.jpg",
-    imageAlt: "Two people in warm conversation on a sofa at home",
-    tags: ["Continuity of care", "Person-centred", "Independence"],
+    imageAlt: "Two people in warm conversation in a comfortable living room",
+    tags: ["Continuity of support", "Person-centred", "Independence"],
   },
   {
     id: 2,
-    slug: "understanding-cqc-standards-domiciliary-care",
-    title: "Understanding CQC standards in domiciliary care",
+    slug: "understanding-cqc-standards-supported-living",
+    title: "Understanding CQC standards in supported living",
     excerpt:
-      "What quality care really looks like under the five fundamental standards — and how we meet them every single day.",
+      "What quality support really looks like under the five fundamental standards — and how we meet them every single day.",
     content: `
-      <p class="lede">The Care Quality Commission's five key questions — is care safe, effective, caring, responsive and well-led? — form the backbone of how domiciliary care is assessed and regulated in England. Understanding what those standards mean in practice is the first step to recognising excellent care when you see it.</p>
+      <p class="lede">The Care Quality Commission's five key questions — is care safe, effective, caring, responsive and well-led? — form the backbone of how supported living services are assessed and regulated in England. Understanding what those standards mean in practice is the first step to recognising excellent support when you see it.</p>
 
       <h2>Safe</h2>
-      <p>Safety in domiciliary care means more than avoiding accidents. It means robust medication management, thorough risk assessments, staff who know how to recognise and report safeguarding concerns, and systems that catch problems early. At DeRivian, every new client receives a detailed home risk assessment before care begins, and our staff complete regular safeguarding training throughout the year.</p>
+      <p>Safety in supported living means more than avoiding accidents. It means robust risk management, thorough support plans, staff who know how to recognise and report safeguarding concerns, and systems that catch problems early. At DeRivian, every new person we support receives a detailed risk assessment before support begins, and our staff complete regular safeguarding training throughout the year.</p>
 
       <h2>Effective</h2>
-      <p>Effective care is care that makes a real difference. It follows evidence-based guidance, involves the person in decisions about their own support, and works alongside GPs, occupational therapists and other professionals to deliver coordinated, joined-up care. Our digital care records mean everyone involved in a person's care can see the same up-to-date picture.</p>
+      <p>Effective support is support that makes a real difference to outcomes. It follows best-practice guidance, actively involves the person in decisions about their own support, and works alongside GPs, social workers and other professionals to deliver joined-up, coordinated care. Our digital records mean everyone involved always has the same up-to-date picture.</p>
 
       <h2>Caring</h2>
-      <p>Regulation can't write a rule that makes a carer kind — but it can create conditions where kindness thrives. CQC looks for dignity, respect and compassion as lived values, not policy statements. We recruit for empathy and reinforce it through supervision, peer learning and a culture where people feel safe to speak up.</p>
+      <p>Regulation can't write a rule that makes a support worker kind — but it can create conditions where kindness thrives. CQC looks for dignity, respect and compassion as lived values, not policy statements. We recruit for empathy and reinforce it through supervision, peer learning and a culture where people feel safe to speak up.</p>
 
       <h2>Responsive</h2>
-      <p>Responsive care adapts. It changes when a person's needs change, responds quickly to new concerns, and listens to feedback from people and their families. Our care plans are living documents, reviewed regularly rather than filed and forgotten.</p>
+      <p>Responsive support adapts. It changes when a person's needs or goals change, responds quickly to new concerns, and listens to feedback from the people we support and their families. Our support plans are living documents, reviewed regularly rather than filed and forgotten.</p>
 
       <h2>Well-led</h2>
-      <p>Excellent care starts with excellent leadership. CQC looks for clear governance, a transparent culture, and managers who know what's happening on the ground. Our registered manager maintains an open door — to staff, to clients and to families — because problems solved early stay small.</p>
+      <p>Excellent support starts with excellent leadership. CQC looks for clear governance, a transparent culture, and managers who know what's happening on the ground. Our registered manager maintains an open door — to staff, to the people we support and to families — because problems solved early stay small.</p>
     `,
     category: "CQC Updates",
     categoryKey: "cqc",
@@ -66,34 +66,34 @@ export const STATIC_POSTS = [
     readTime: 5,
     publishedAt: "2026-02-20",
     imageUrl: "/images/feature-1.jpg",
-    imageAlt: "Two colleagues reviewing care notes at a desk",
+    imageAlt: "Two colleagues reviewing support notes at a desk",
     tags: ["CQC", "Regulation", "Quality", "Standards"],
   },
   {
     id: 3,
-    slug: "supporting-independence-at-home-practical-guide",
-    title: "Supporting independence at home: a practical guide",
+    slug: "supporting-independence-practical-guide",
+    title: "Supporting independence: a practical guide",
     excerpt:
-      "Small adjustments and the right approach to daily support can make an enormous difference to a person's confidence, dignity and quality of life.",
+      "Small adjustments and the right approach to daily support can make an enormous difference to a person's confidence, skills and quality of life.",
     content: `
-      <p class="lede">Supporting someone at home isn't about doing things for them — it's about helping them do things for themselves. That distinction sounds simple, but it shapes every aspect of good domiciliary care.</p>
+      <p class="lede">Supporting someone in their own home isn't about doing things for them — it's about helping them do things for themselves. That distinction sounds simple, but it shapes every aspect of good supported living practice.</p>
 
       <h2>What independence actually means</h2>
       <p>Independence doesn't require doing everything alone. It means having choice and control over your own life — deciding when you eat, what you wear, who you see, how you spend your time. A person who needs support with personal care can still live an intensely independent life if that support is delivered in a way that respects their preferences and preserves their sense of agency.</p>
 
       <h2>The right way to help</h2>
-      <p>The best carers know when to step in and when to stand back. Doing too much is as harmful as doing too little — it erodes confidence and creates unnecessary dependence. Good support means watching for natural pauses, prompting rather than doing, and celebrating small achievements alongside the person.</p>
+      <p>The best support workers know when to step in and when to stand back. Doing too much is as harmful as doing too little — it erodes confidence and creates unnecessary dependency. Good support means watching for natural pauses, prompting rather than doing, and celebrating small achievements alongside the person.</p>
 
-      <h3>Practical strategies for common situations</h3>
+      <h3>Practical strategies for building independence</h3>
       <ul>
-        <li><strong>Mealtimes:</strong> Prepare and prompt, but let the person eat at their own pace and make their own choices wherever possible.</li>
-        <li><strong>Mobility:</strong> Walk alongside rather than in front, offer a hand rather than taking an arm, and resist the urge to rush.</li>
-        <li><strong>Personal care:</strong> Talk through each step before acting, ask preferences, and create a routine that feels familiar and predictable.</li>
-        <li><strong>Social connection:</strong> Help people maintain contact with friends, family and community — isolation is one of the biggest risks to wellbeing.</li>
+        <li><strong>Mealtimes:</strong> Prepare and prompt, but let the person make their own choices and eat at their own pace wherever possible. Involve them in choosing what to cook.</li>
+        <li><strong>Getting out:</strong> Walk alongside rather than in front, plan routes together, and resist the urge to take over. The goal is for them to do it themselves next time.</li>
+        <li><strong>Managing money:</strong> Work through budgeting together rather than handling it for them. Even small financial decisions build confidence over time.</li>
+        <li><strong>Social connection:</strong> Help people maintain and build friendships and community links — isolation is one of the biggest risks to wellbeing and long-term independence.</li>
       </ul>
 
-      <h2>When needs change</h2>
-      <p>Independence support must evolve as needs do. Regular review of a care plan — and genuinely listening to the person about what's working and what isn't — is what separates care that adapts from care that stagnates.</p>
+      <h2>When goals change</h2>
+      <p>Support must evolve as goals and needs do. Regular review of a support plan — and genuinely listening to the person about what's working and what isn't — is what separates support that adapts from support that stagnates.</p>
     `,
     category: "Supported Living Advice",
     categoryKey: "advice",
@@ -104,32 +104,32 @@ export const STATIC_POSTS = [
     readTime: 5,
     publishedAt: "2026-02-05",
     imageUrl: "/images/feature-2.jpg",
-    imageAlt: "A carer and client reading paperwork together on a sofa",
-    tags: ["Independence", "Person-centred", "Daily support"],
+    imageAlt: "A support worker and resident working through something practical together",
+    tags: ["Independence", "Person-centred", "Life skills"],
   },
   {
     id: 4,
-    slug: "talking-to-a-family-member-about-care",
-    title: "How to talk to a family member about needing care",
+    slug: "talking-to-a-family-member-about-supported-living",
+    title: "How to talk to a family member about supported living",
     excerpt:
-      "One of the hardest conversations families face — approached with honesty, patience and the right framing, it doesn't have to be.",
+      "One of the most significant conversations families face — approached with honesty, patience and the right framing, it doesn't have to be daunting.",
     content: `
-      <p class="lede">Few conversations are harder than telling someone you love that they might need extra support at home. The fear of how they'll react, the worry about what it means for their independence, the guilt — it all tends to arrive at once. But these conversations, done thoughtfully, can be the start of something genuinely positive.</p>
+      <p class="lede">Few conversations are harder than talking with someone you love about moving toward more independent living with support. The fear of how they'll react, the worry about what it means for your relationship, the uncertainty about what it all involves — it tends to arrive at once. But these conversations, done thoughtfully, can be the start of something genuinely positive.</p>
 
       <h2>Choose the right moment</h2>
-      <p>Don't try to have this conversation when you're both stressed or in a hurry. A calm, relaxed setting — perhaps over a cup of tea at home, not at the end of a rushed visit — creates the best conditions for an honest, unhurried exchange. Avoid times when the person is tired, unwell, or has just had a difficult day.</p>
+      <p>Don't try to have this conversation when you're both stressed or in a hurry. A calm, relaxed setting — perhaps over a cup of tea at home, not at the end of a rushed visit — creates the best conditions for an honest, unhurried exchange. Avoid times when the person is tired, anxious, or has just had a difficult day.</p>
 
-      <h2>Lead with love, not worry</h2>
-      <p>It's tempting to open with the list of concerns that have been building up. Resist that. Start instead with what you've noticed and why it matters to you — "I love you and I want you to be safe" lands very differently from "I'm worried you're not coping." One centres care; the other can feel like judgement.</p>
+      <h2>Lead with what's possible, not what's difficult</h2>
+      <p>It's tempting to open with the list of concerns that have been building up. Resist that. Supported living is fundamentally about possibility — having your own home, your own front door, your own routine. Frame it around what they could gain, not what they might be leaving behind.</p>
 
       <h2>Listen more than you speak</h2>
-      <p>Your family member has thoughts and feelings about their own situation. Give them space to share those before responding. What looks like resistance is often fear — fear of losing independence, of being a burden, of what change means for their sense of self. Those fears deserve to be heard and taken seriously, not talked over.</p>
+      <p>The person you're talking with has thoughts and feelings about their own future. Give them space to share those before responding. What looks like resistance is often fear — fear of the unknown, of losing familiar relationships, of change. Those fears deserve to be heard and taken seriously, not talked over.</p>
 
       <h2>Focus on what they want</h2>
-      <p>Frame care around their goals, not yours. If they want to stay in their home, care is what makes that possible. If they value their morning routine, care can protect it. Finding the connection between what they want and what care can provide shifts the conversation from loss to possibility.</p>
+      <p>Frame supported living around their goals, not yours. If they want more freedom, supported living is what makes that possible. If they value their routines, a good support plan can protect them. Finding the connection between what they want and what supported living offers shifts the conversation from loss to opportunity.</p>
 
-      <h2>Take it slowly</h2>
-      <p>One conversation rarely settles everything. That's fine. Plant the seed, revisit it gently, and involve them in every decision about what support might look like. When people feel in control of the process, they're far more likely to welcome the result.</p>
+      <h2>Involve them in every decision</h2>
+      <p>One conversation rarely settles everything. That's fine. Plant the seed, revisit it gently, and involve them in every step — choosing a provider, visiting a home, shaping their support plan. When people feel in control of the process, they are far more likely to thrive in the result.</p>
     `,
     category: "Supported Living Advice",
     categoryKey: "advice",
@@ -140,36 +140,36 @@ export const STATIC_POSTS = [
     readTime: 4,
     publishedAt: "2026-01-18",
     imageUrl: "/images/blog-1.jpg",
-    imageAlt: "Two people having a gentle conversation at a kitchen table",
+    imageAlt: "Two people having a gentle, open conversation at a kitchen table",
     tags: ["Family", "Communication", "Advice"],
   },
   {
     id: 5,
-    slug: "medication-management-at-home",
-    title: "Medication management at home: what families should know",
+    slug: "medication-management-in-supported-living",
+    title: "Medication management in supported living: what to know",
     excerpt:
-      "Safely managing medication is one of the most important aspects of domiciliary care — here's how it works and what to look for.",
+      "Safe medication support is one of the most important aspects of a well-run supported living service — here's how it works.",
     content: `
-      <p class="lede">For many people receiving care at home, medication management is one of the most critical parts of their daily routine. Getting it right matters enormously — both for health outcomes and for peace of mind. Here's what good medication support looks like, and what questions to ask.</p>
+      <p class="lede">For many people in supported living, medication management is one of the most critical parts of their daily routine. Getting it right matters enormously — both for health outcomes and for peace of mind. Here's what good medication support looks like, and what questions to ask a provider.</p>
 
       <h2>Types of medication support</h2>
-      <p>Domiciliary care workers can provide different levels of medication support depending on training and the individual's needs:</p>
+      <p>Support workers can provide different levels of medication support depending on their training and the individual's needs:</p>
       <ul>
-        <li><strong>Prompting:</strong> Reminding a person to take their medication and confirming they've done so.</li>
-        <li><strong>Assisting:</strong> Helping with packaging (opening blister packs, pouring liquid medicine), but the person self-administers.</li>
-        <li><strong>Administering:</strong> The carer gives the medication directly — this requires specific training and is clearly documented in the care plan.</li>
+        <li><strong>Prompting:</strong> Reminding the person to take their medication and confirming they've done so.</li>
+        <li><strong>Assisting:</strong> Helping with packaging (opening blister packs, pouring liquid medicine), while the person self-administers.</li>
+        <li><strong>Administering:</strong> The support worker gives the medication directly — this requires specific training and must be clearly documented in the support plan.</li>
       </ul>
 
       <h2>What safe medication management looks like</h2>
-      <p>Every medication support task should be recorded immediately — what was given, at what time, and by whom. Medication should be stored securely and checked regularly against the prescription. Any changes to a prescription should be communicated promptly to the care team and updated in the care plan before the new medication is given.</p>
+      <p>Every medication support task should be recorded immediately — what was given, at what time, and by whom. Medication should be stored securely and checked regularly against the prescription. Any changes to a prescription should be communicated promptly to the support team and updated in the support plan before the new medication is given.</p>
 
       <h2>Medication errors and what to do</h2>
-      <p>Even with excellent systems, errors can happen. What matters is how they're handled. A good care provider will have a clear process: document the error immediately, notify the relevant health professional, support the person appropriately, and conduct a review to understand what went wrong and how to prevent it happening again. Transparency — with the person, with their family and with the regulator if required — is non-negotiable.</p>
+      <p>Even with excellent systems, errors can happen. What matters is how they're handled. A good provider will have a clear process: document the error immediately, notify the relevant health professional, support the person appropriately, and conduct a review to understand what went wrong. Transparency — with the person, their family and the regulator if required — is non-negotiable.</p>
 
-      <h2>Questions to ask your provider</h2>
-      <p>When choosing a domiciliary care provider, ask specifically about their medication management procedures: How is it recorded? Who oversees it? What happens if something goes wrong? The answers will tell you a great deal about the quality of the whole service.</p>
+      <h2>Questions to ask a provider</h2>
+      <p>When choosing a supported living provider, ask specifically about medication management: How is it recorded? Who oversees it? What happens if something goes wrong? The answers will tell you a great deal about the quality of the whole service.</p>
     `,
-    category: "Care Tips",
+    category: "Support Tips",
     categoryKey: "tips",
     featured: false,
     authorName: "Vivienne Ewah",
@@ -178,37 +178,34 @@ export const STATIC_POSTS = [
     readTime: 5,
     publishedAt: "2025-12-10",
     imageUrl: "/images/feature-4.jpg",
-    imageAlt: "A care professional preparing medication carefully at a kitchen counter",
-    tags: ["Medication", "Safety", "Care management"],
+    imageAlt: "A support worker carefully checking medication records",
+    tags: ["Medication", "Safety", "Support management"],
   },
   {
     id: 6,
-    slug: "what-to-expect-from-your-first-care-visit",
-    title: "What to expect from your first care visit",
+    slug: "what-to-expect-from-your-support-plan-review",
+    title: "What to expect from your support plan review",
     excerpt:
-      "Starting care at home can feel daunting. Knowing what happens during that first visit — and why — helps everything feel much more manageable.",
+      "Regular reviews are the engine of good supported living — here's what they involve, and how to get the most from yours.",
     content: `
-      <p class="lede">The first care visit is a significant moment. For the person receiving care, it can bring a mix of relief and apprehension. For families, there's often hope alongside worry. Knowing what to expect helps everyone feel prepared.</p>
+      <p class="lede">A support plan review is one of the most important meetings in the supported living calendar. Done well, it's the moment where your voice shapes everything that comes next. Done poorly, it's a box-ticking exercise that changes nothing. Knowing what to expect — and what to ask for — makes all the difference.</p>
 
-      <h2>Before the visit: the care assessment</h2>
-      <p>A good domiciliary care provider doesn't just show up — they prepare. Before care begins, a care manager or coordinator will visit (or in some cases conduct a detailed assessment remotely) to understand the person's needs, preferences, routines and goals. This assessment forms the basis of the care plan: a detailed document that guides every carer who provides support.</p>
+      <h2>What a review is for</h2>
+      <p>A support plan is a living document — it should reflect who you are today, not who you were when support first started. Reviews exist to check what's working, understand what's changed, and update your goals and the support you receive accordingly. They're also an opportunity to raise anything that hasn't been working, no matter how small it seems.</p>
 
-      <h2>The introductory visit</h2>
-      <p>Many providers offer a short introductory visit before regular care starts — a chance for the person and their carer to meet without the pressure of a full care task. This is valuable. First impressions matter, and a brief, low-stakes meeting helps both parties feel more comfortable when the real work begins.</p>
+      <h2>Who should be there</h2>
+      <p>A review should centre the person being supported. You can choose to have family members, an advocate or a social worker present — but the meeting should be yours. A good provider will prepare you in advance, share a draft of your current support plan, and make space for you to speak first.</p>
 
-      <h2>What happens during the first full visit</h2>
-      <p>The first visit is often a little slower than subsequent ones, and that's intentional. The carer will take time to understand the layout of the home, confirm preferences, ask questions, and make sure everything on the care plan reflects reality. It's also a moment for the person to communicate anything the assessment missed.</p>
-
-      <h3>A few things to prepare</h3>
+      <h3>Questions worth raising</h3>
       <ul>
-        <li>Have a list of current medications ready, including dosages and times.</li>
-        <li>Show the carer where everything is — cleaning products, kitchen items, bathroom supplies.</li>
-        <li>Share anything about your routine that matters to you, even if it seems small.</li>
-        <li>Ask any questions you have about how things will work.</li>
+        <li>Which of my goals have I made progress on since the last review?</li>
+        <li>Are there things I want to do that I'm not currently being supported with?</li>
+        <li>Is there anything about my current support that I'd like to change?</li>
+        <li>What would I like to focus on over the next few months?</li>
       </ul>
 
-      <h2>After the visit</h2>
-      <p>Good providers follow up after the first visit to check how it went — for both the person receiving care and the carer. If anything needs adjusting, this is the moment to say so. Care plans are living documents and should be updated whenever reality diverges from what was planned.</p>
+      <h2>After the review</h2>
+      <p>Any changes agreed in the review should be reflected in an updated support plan — and you should receive a copy. If your hours are changing, your support workers are changing, or new goals are being introduced, these should be clearly written down and communicated to everyone involved. A review that produces no written changes is unlikely to produce any real change at all.</p>
     `,
     category: "Supported Living Advice",
     categoryKey: "advice",
@@ -219,31 +216,36 @@ export const STATIC_POSTS = [
     readTime: 4,
     publishedAt: "2025-11-28",
     imageUrl: "/images/blog-2.jpg",
-    imageAlt: "A carer greeting a client warmly at the front door of a home",
-    tags: ["First visit", "Starting care", "Advice"],
+    imageAlt: "A resident and support worker going through a support plan together",
+    tags: ["Support plans", "Reviews", "Co-production"],
   },
   {
     id: 7,
-    slug: "winter-wellbeing-for-people-receiving-care-at-home",
-    title: "Winter wellbeing for people receiving care at home",
+    slug: "community-inclusion-supported-living",
+    title: "Community inclusion: why it matters in supported living",
     excerpt:
-      "Cold weather brings specific risks for people living at home with care needs. Here's how good care adapts to keep people safe and well through winter.",
+      "A home is more than four walls. How we help the people we support to build real connections and take part in the life of their community.",
     content: `
-      <p class="lede">Winter brings particular challenges for people receiving domiciliary care. Cold temperatures, reduced daylight, and seasonal illness all affect health, mood and safety. Good care anticipates these challenges rather than just reacting to them.</p>
+      <p class="lede">One of the clearest markers of a successful supported living placement isn't just that someone is safe in their home — it's that they're genuinely part of the world around them. Community inclusion isn't a nice-to-have; it's a core outcome that good supported living actively works toward.</p>
 
-      <h2>Keeping warm and safe</h2>
-      <p>Hypothermia is a genuine risk for older people and those with reduced mobility, even indoors. Carers should check that heating is working and adequate, that the person is wearing appropriate clothing, and that hot drinks and meals are part of the daily routine. Any concerns about a cold home should be reported and escalated promptly — many local authorities offer winter fuel support and home insulation schemes.</p>
+      <h2>What community inclusion actually means</h2>
+      <p>Inclusion isn't just about being physically present in the community — it's about meaningful participation. That means having friends and relationships that aren't paid, accessing leisure activities you actually enjoy, contributing something (whether through work, volunteering or creative activity), and being seen and known in the places you frequent.</p>
 
-      <h2>Falls risk in winter</h2>
-      <p>Icy paths, wet floors from boots and coats, and reduced confidence outdoors all increase falls risk in winter. Care plans should include a seasonal review of the home environment: are mats secured? Is there a non-slip mat in the bathroom? Is the outside path gritted when needed? These small details matter enormously.</p>
+      <h2>The role of support workers</h2>
+      <p>A support worker's job isn't to be someone's friend — it's to help them build and maintain their own friendships and community connections. That means supporting people to attend clubs, groups and activities; helping with transport or communication barriers; and, critically, stepping back as someone grows in confidence so they can manage more independently.</p>
 
-      <h2>Seasonal illness</h2>
-      <p>Flu and respiratory infections spread more readily in winter. Good carers follow rigorous hand hygiene, stay home when unwell, and support clients to access flu and COVID vaccinations. Monitoring for signs of illness — increased fatigue, reduced appetite, confusion — is especially important in the colder months when any infection can escalate quickly in vulnerable people.</p>
+      <h3>Practical ways we promote inclusion</h3>
+      <ul>
+        <li>Supporting access to local leisure centres, libraries, community groups and places of worship.</li>
+        <li>Helping people explore education and employment opportunities that match their interests and abilities.</li>
+        <li>Facilitating contact with family and friends — including digital communication for those who find it easier.</li>
+        <li>Working with the person to identify activities they're curious about and trying them out together.</li>
+      </ul>
 
-      <h2>Mood and social connection</h2>
-      <p>Winter isolation is a real and serious problem. Shorter days, cold weather and reduced activity can all contribute to low mood and loneliness. Carers can make a real difference by ensuring visits include genuine conversation, supporting people to maintain contact with friends and family, and encouraging light activity where it's safe.</p>
+      <h2>When isolation creeps in</h2>
+      <p>Loneliness and isolation are serious risks in supported living — particularly when someone is new to an area or has recently transitioned from a more institutional setting. Monitoring social wellbeing is as important as monitoring physical health, and any withdrawal from activities or relationships should be taken seriously and discussed at the next support plan review.</p>
     `,
-    category: "Care Tips",
+    category: "Support Tips",
     categoryKey: "tips",
     featured: false,
     authorName: "Deborah Brown",
@@ -252,7 +254,7 @@ export const STATIC_POSTS = [
     readTime: 4,
     publishedAt: "2025-11-01",
     imageUrl: "/images/feature-3.jpg",
-    imageAlt: "A warm mug of tea next to a window with frost outside",
-    tags: ["Winter", "Safety", "Wellbeing", "Seasonal"],
+    imageAlt: "A resident enjoying a community activity with others",
+    tags: ["Community", "Inclusion", "Independence", "Wellbeing"],
   },
 ]

@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm"
 export const metadata = {
   title: "Contact Us",
   description:
-    "Contact DeRivian Care Ltd — phone, email, 24/7 safeguarding line, and our secure referral and inquiry form. 61 Ann Street, Plumstead, London SE18 7LS.",
+    "Contact DeRivian Care Ltd — phone, email, 24/7 safeguarding line, and our secure referral and inquiry form. 24a Sydenham Road, London SE26 5QW.",
 }
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
             <p className="eyebrow">Contact us</p>
             <h1>Get in touch</h1>
             <p className="lead">
-              We&apos;re here to support you and answer any questions about our domiciliary care services. Reach out by phone, email, or by completing our secure referral and inquiry form below.
+              We&apos;re here to support you and answer any questions about our supported living services. Whether you&apos;re an individual, a family member or a professional referrer — reach out by phone, email or via our secure referral form below.
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function ContactPage() {
           </div>
           <div className="map-frame reveal">
             <iframe
-              title="Map showing DeRivian Care at 61 Ann Street, Plumstead, London SE18 7LS"
+              title="Map showing DeRivian Care at 24a Sydenham Road, London SE26 5QW"
               src={siteConfig.contact.mapEmbed}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -92,7 +92,7 @@ export default function ContactPage() {
               <p className="eyebrow">Inquiry</p>
               <h2>Send us a message</h2>
               <p className="lead">
-                Whether you&apos;re arranging care for yourself or a loved one, making a professional referral, or simply have a question — tell us what brings you here and we&apos;ll respond within one working day.
+                Whether you&apos;re seeking support for yourself or a loved one, making a professional referral, or simply have a question — tell us what brings you here and we&apos;ll respond within one working day.
               </p>
               <div className="contact-info" style={{ marginTop: "2rem" }}>
                 <div className="contact-info__row">

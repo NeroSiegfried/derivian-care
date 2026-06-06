@@ -6,7 +6,7 @@ import { STATIC_POSTS } from "@/lib/staticPosts"
 export const metadata = {
   title: "Blog",
   description:
-    "Stories, CQC updates, community news and supported-living advice from DeRivian Care — domiciliary care across London.",
+    "Stories, CQC updates, community news and supported living advice from DeRivian Care — supported living services across London.",
 }
 
 async function getPosts() {

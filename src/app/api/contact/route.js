@@ -20,8 +20,8 @@ export async function POST(req) {
     return Response.json({ error: "Email service not configured" }, { status: 500 })
   }
 
-  const toAddress = process.env.CONTACT_EMAIL || "info@derivian.com"
-  const fromAddress = process.env.FROM_EMAIL || "DeRivian Website <noreply@derivian.com>"
+  const toAddress = process.env.CONTACT_EMAIL || "info@derivian.co.uk"
+  const fromAddress = process.env.FROM_EMAIL || "DeRivian Website <noreply@derivian.co.uk>"
 
   const html = `
     <h2>New inquiry from ${esc(firstName)} ${esc(lastName)}</h2>

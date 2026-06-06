@@ -3,6 +3,7 @@
 *.fig
 Gemini_Generated_Image*
 derivian_project/
+Derivian/
 untitled-design*/
 node_modules/
 .env
@@ -11,3 +12,4 @@ node_modules/
 .claude/
 .vite/
 .next/
+.env*.local

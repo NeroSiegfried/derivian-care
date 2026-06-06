@@ -28,18 +28,18 @@ export default async function HomePage() {
       <section className="section scheme-1">
         <div className="container">
           <div className="hero__head reveal">
-            <h1>Empowering independent living with compassion</h1>
+            <h1>Your home, your life, your way</h1>
             <p className="lead">
-              DeRivian Care provides domiciliary care for adults across London — supporting those aged 18 to 65 and over 65 to live meaningful, independent lives in the comfort of their own homes.
+              DeRivian Care provides supported living services for adults across London — helping people with learning disabilities, autism, mental health needs and physical disabilities to live independently, build life skills and be part of their community.
             </p>
             <div className="hero__actions">
-              <Link className="btn btn--primary btn--lg" href="/services">Browse Services</Link>
-              <Link className="btn btn--secondary btn--lg" href="/contact">Contact Us</Link>
+              <Link className="btn btn--primary btn--lg" href="/services">Our Services</Link>
+              <Link className="btn btn--secondary btn--lg" href="/contact">Get in Touch</Link>
             </div>
           </div>
           <div className="hero__media reveal">
             <div className="img-frame ratio-2-1">
-              <img src="/images/hero.jpg" alt="A DeRivian carer sharing a warm moment with a client at home, both looking at a laptop together" />
+              <img src="/images/hero.jpg" alt="A supported living resident spending time in their own home, relaxed and comfortable" />
             </div>
           </div>
         </div>
@@ -50,9 +50,9 @@ export default async function HomePage() {
         <div className="container">
           <div className="heading heading--center reveal">
             <p className="eyebrow">Why choose us</p>
-            <h2>What sets our care apart</h2>
+            <h2>What sets our support apart</h2>
             <p className="lead">
-              We listen first, then act. Every person we support has their own story, their own pace, their own vision for how they want to live — and we build our care around that vision, not the other way around.
+              We listen first, then act. Every person we support has their own story, their own goals and their own vision for how they want to live — and we build our support around that vision, not the other way round.
             </p>
           </div>
           <div className="grid grid--3">
@@ -60,22 +60,22 @@ export default async function HomePage() {
               <div className="img-frame ratio-16-9">
                 <img src="/images/feature-0.jpg" alt="Three people relaxing and laughing together in a comfortable living room" />
               </div>
-              <h4>Person-centred care</h4>
-              <p>We work with you to understand what matters most, then shape every visit and care plan around your personal goals — not a fixed list of tasks.</p>
+              <h4>Co-produced support plans</h4>
+              <p>We work with you — not for you. Your goals, your routine and your definition of independence shape every support plan, reviewed regularly so it stays relevant as you grow.</p>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-1.jpg" alt="Two colleagues reviewing care notes together at a desk" />
+                <img src="/images/feature-1.jpg" alt="Two colleagues reviewing support notes together at a desk" />
               </div>
-              <h4>Experienced &amp; compassionate team</h4>
-              <p>A consistent, familiar team shows up day after day, building the real relationships and trust that make all the difference to your wellbeing.</p>
+              <h4>Experienced &amp; consistent team</h4>
+              <p>A familiar team builds the relationships and trust that make real progress possible. We invest in our staff so they stay — and so you always have people around you who truly know you.</p>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-2.jpg" alt="A carer and client reading paperwork together on a sofa at home" />
+                <img src="/images/feature-2.jpg" alt="A support worker and resident reviewing a plan together on a sofa" />
               </div>
-              <h4>Promoting independence</h4>
-              <p>We step back where we can, encourage where we should, and support where it counts — so you grow in confidence and autonomy over time.</p>
+              <h4>Empowering independence</h4>
+              <p>We step back where we can, encourage where we should, and support where it counts — so you build confidence, develop skills and live life on your own terms.</p>
             </article>
           </div>
         </div>
@@ -86,49 +86,49 @@ export default async function HomePage() {
         <div className="container">
           <div className="heading heading--center reveal">
             <p className="eyebrow">Services</p>
-            <h2>The care you need, shaped your way</h2>
+            <h2>Support shaped around your life</h2>
             <p className="lead">
-              We handle the practical side so you can focus on living. Each service is delivered by people who understand that independence means something different to everyone.
+              From the practical to the personal, our support is designed to build your independence — not create dependency. Every service is delivered by people who understand that living well means something different to everyone.
             </p>
           </div>
           <div className="grid grid--4">
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-2.jpg" alt="A carer assisting a client with personal care at home, with dignity" loading="lazy" />
+                <img src="/images/feature-0.jpg" alt="A resident going about their daily routine at home with light support" loading="lazy" />
               </div>
-              <h5>Personal care</h5>
-              <p>Assistance with bathing, grooming and dressing — handled with dignity and respect, always.</p>
-              <Link className="btn btn--link" href="/services#personal-care">
+              <h5>Daily living support</h5>
+              <p>Practical help with cooking, shopping, cleaning and managing your home — so you can focus on the life you want to live.</p>
+              <Link className="btn btn--link" href="/services#daily-living">
                 Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
               </Link>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-4.jpg" alt="A care professional preparing medication safely" loading="lazy" />
+                <img src="/images/feature-2.jpg" alt="A support worker encouraging a resident to develop a new skill" loading="lazy" />
               </div>
-              <h5>Medication management</h5>
-              <p>Reliable support ensuring medications are taken safely, correctly and on schedule.</p>
-              <Link className="btn btn--link" href="/services#medication">
+              <h5>Life skills development</h5>
+              <p>Budgeting, cooking, using public transport and managing your tenancy — building the skills that unlock real independence.</p>
+              <Link className="btn btn--link" href="/services#life-skills">
                 Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
               </Link>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-3.jpg" alt="A nourishing home-cooked meal being prepared in a kitchen" loading="lazy" />
+                <img src="/images/feature-3.jpg" alt="A resident and support worker heading out into the community together" loading="lazy" />
               </div>
-              <h5>Nutrition &amp; hydration</h5>
-              <p>Meal preparation and gentle encouragement to keep you nourished and well every day.</p>
-              <Link className="btn btn--link" href="/services#nutrition">
+              <h5>Community access</h5>
+              <p>Support to access social activities, leisure, education and employment — because a good life happens inside and outside your home.</p>
+              <Link className="btn btn--link" href="/services#community">
                 Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
               </Link>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/blog-2.jpg" alt="A carer supporting a client to move safely and confidently at home" loading="lazy" />
+                <img src="/images/feature-4.jpg" alt="A support worker calmly reviewing health and wellbeing notes with a resident" loading="lazy" />
               </div>
-              <h5>Mobility support</h5>
-              <p>Safe transfers and help moving around your home — or out into the world with confidence.</p>
-              <Link className="btn btn--link" href="/services#mobility">
+              <h5>Health &amp; wellbeing</h5>
+              <p>Medication management, GP access and mental health support — joined-up care that keeps you safe, healthy and thriving.</p>
+              <Link className="btn btn--link" href="/services#health">
                 Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
               </Link>
             </article>
@@ -144,8 +144,8 @@ export default async function HomePage() {
         <div className="container">
           <div className="heading heading--center reveal">
             <p className="eyebrow">Updates</p>
-            <h2>What&apos;s happening in care</h2>
-            <p className="lead">Stories, guidance and insights from across our community.</p>
+            <h2>From our community</h2>
+            <p className="lead">Stories, guidance and insights on supported living, independence and the things that matter to the people we support.</p>
           </div>
           <div className="grid grid--3">
             {posts.map((post) => (
@@ -179,7 +179,7 @@ export default async function HomePage() {
           <div className="heading reveal">
             <h2>Questions</h2>
             <p className="lead">
-              Find answers to common questions about our domiciliary care services. Can&apos;t see yours?{" "}
+              Find answers to common questions about our supported living services. Can&apos;t see yours?{" "}
               <Link href="/contact" style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>Get in touch</Link>.
             </p>
           </div>

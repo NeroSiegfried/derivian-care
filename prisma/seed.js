@@ -3,30 +3,30 @@ const prisma = new PrismaClient()
 
 const posts = [
   {
-    slug: "building-trust-through-consistent-care",
-    title: "Building trust through consistent care",
-    excerpt: "Why familiar faces and steady routines are the real foundation of independence — and how continuity of care changes everything for the people we support.",
+    slug: "building-trust-through-consistent-support",
+    title: "Building trust through consistent support",
+    excerpt: "Why familiar faces and steady routines are the real foundation of independence — and how continuity of support changes everything for the people we work with.",
     content: `
-      <p class="lede">Ask anyone who relies on care at home what matters most, and few will lead with clinical tasks. They talk about the person who knows how they take their tea, who remembers the name of their grandchild, who notices when something isn't quite right. They talk about trust — and trust is built on consistency.</p>
+      <p class="lede">Ask anyone in supported living what matters most, and few will lead with tasks. They talk about the person who knows how they take their tea, who remembers the name of their best friend, who notices when something isn't quite right. They talk about trust — and trust is built on consistency.</p>
 
       <h2>Why continuity changes everything</h2>
-      <p>In domiciliary care, the same small team visiting day after day isn't a luxury — it's the foundation of safe, effective support. A familiar carer spots subtle changes early: a slight loss of appetite, a new hesitation on the stairs, a quieter mood. These observations, gathered over weeks rather than minutes, are what keep people safe and well at home.</p>
-      <p>Continuity also protects dignity. When you've explained your routine and preferences once, you shouldn't have to explain them again to a stranger every visit. Consistent carers carry that understanding with them, so support feels personal rather than procedural.</p>
+      <p>In supported living, the same small team working with you day after day isn't a luxury — it's the foundation of safe, effective support. A familiar support worker spots subtle changes early: a slight withdrawal from activities, a new hesitation about going out, a quieter mood that doesn't lift. These observations, gathered over weeks rather than minutes, are what keep people safe and help them thrive.</p>
+      <p>Continuity also protects dignity. When you've explained your routine and preferences once, you shouldn't have to explain them again to a stranger every shift. Consistent support workers carry that understanding with them, so support feels personal rather than procedural.</p>
 
       <figure>
-        <div class="img-frame ratio-2-1"><img src="/images/feature-2.jpg" alt="A carer and client reading paperwork together on a sofa" /></div>
-        <figcaption>Familiar faces and steady routines are what turn a care visit into a relationship.</figcaption>
+        <div class="img-frame ratio-2-1"><img src="/images/feature-2.jpg" alt="A support worker and resident working on a plan together" /></div>
+        <figcaption>Familiar faces and steady routines are what turn a support shift into a genuine relationship.</figcaption>
       </figure>
 
       <h3>What consistency looks like in practice</h3>
-      <p>At DeRivian, we build schedules around keeping the same small team in your life wherever possible. We invest in our staff — through thorough induction, ongoing development, regular supervision and fair pay — precisely because people who feel valued stay. Low staff turnover isn't just good for our team; it's what makes continuity of care possible for the people we support.</p>
-      <p>It also means better communication. Our digital care records keep everyone aligned, so even when a regular carer takes well-earned leave, whoever steps in arrives already knowing your story, your preferences and your goals.</p>
+      <p>At DeRivian, we build rotas around keeping the same small team in your life wherever possible. We invest in our staff — through thorough induction, ongoing development, regular supervision and fair pay — precisely because people who feel valued stay. Low staff turnover isn't just good for our team; it's what makes continuity of support possible for the people we support.</p>
+      <p>It also means better communication. Our digital support records keep everyone aligned, so even when a regular support worker takes well-earned leave, whoever steps in arrives already knowing your story, your preferences and your goals.</p>
 
-      <blockquote>"You can't build trust in a single visit. You build it in the hundredth — when someone walks in, already knowing exactly how you like things done."</blockquote>
+      <blockquote>"You can't build trust in a single shift. You build it in the hundredth — when someone walks in, already knowing exactly how you like things done."</blockquote>
 
       <h3>Independence is the goal</h3>
-      <p>Consistency and independence go hand in hand. When a carer truly knows you, they know when to step back and let you do something yourself, and when to gently offer a hand. That judgement — earned through familiarity — is what helps people grow in confidence rather than become dependent.</p>
-      <p>That's the heart of person-centred care: not a fixed list of tasks, but a relationship that adapts as you do. It's slower to build and harder to deliver than a rota of rotating faces — and it's the only kind of care we believe in.</p>
+      <p>Consistency and independence go hand in hand. When a support worker truly knows you, they know when to step back and let you do something yourself, and when to gently offer a hand. That judgement — earned through familiarity — is what helps people grow in confidence rather than become dependent.</p>
+      <p>That's the heart of person-centred support: not a fixed list of tasks, but a relationship that adapts as you do. It's slower to build and harder to deliver than a rota of rotating faces — and it's the only kind of support we believe in.</p>
     `,
     category: "Care",
     categoryKey: "care",
@@ -41,11 +41,11 @@ const posts = [
     tags: ["Continuity of care", "Person-centred", "Safeguarding", "Independence"],
   },
   {
-    slug: "understanding-cqc-standards-in-domiciliary-care",
-    title: "Understanding CQC standards in domiciliary care",
-    excerpt: "What quality care really looks like under the five fundamental standards — and how we meet them every single day.",
+    slug: "understanding-cqc-standards-in-supported-living",
+    title: "Understanding CQC standards in supported living",
+    excerpt: "What quality support really looks like under the five fundamental standards — and how we meet them every single day.",
     content: `
-      <p class="lede">The Care Quality Commission's five key questions — is care safe, effective, caring, responsive and well-led? — form the backbone of how domiciliary care is assessed and regulated in England. Understanding what those standards mean in practice is the first step to recognising excellent care when you see it.</p>
+      <p class="lede">The Care Quality Commission's five key questions — is care safe, effective, caring, responsive and well-led? — form the backbone of how supported living services are assessed and regulated in England. Understanding what those standards mean in practice is the first step to recognising excellent support when you see it.</p>
 
       <h2>The five key questions in practice</h2>
       <p>Safe care means more than avoiding accidents. It encompasses safeguarding practices, medication management, infection control and robust risk assessments tailored to each individual's home environment. At DeRivian, every care plan includes a detailed risk assessment reviewed regularly with the client and their family.</p>
@@ -72,7 +72,7 @@ const posts = [
     title: "Independence matters more than you might think",
     excerpt: "How small daily choices and routines shape the quality of supported living — and why we protect them.",
     content: `
-      <p class="lede">When people talk about domiciliary care, the conversation often focuses on what carers do. But the most important question is what the person being supported is able to do for themselves — and how care can protect and expand that space, rather than quietly shrink it.</p>
+      <p class="lede">When people talk about supported living, the conversation often focuses on what support workers do. But the most important question is what the person being supported is able to do for themselves — and how good support can protect and expand that space, rather than quietly shrink it.</p>
 
       <h2>The meaning of small choices</h2>
       <p>Choosing what to have for breakfast, deciding when to get up, keeping a favourite chair facing the window — these might seem insignificant to an outside observer. But for someone receiving care at home, they represent the texture of a life lived on their own terms. Good care protects those choices as fiercely as it manages any clinical risk.</p>
@@ -98,7 +98,7 @@ const posts = [
     title: "Summer gathering brings families together",
     excerpt: "A day of music, food and meaningful connection — celebrating the community at the heart of our care.",
     content: `
-      <p class="lede">On a warm Saturday in July, the courtyard outside our Plumstead office filled with familiar faces — clients, families, carers and neighbours — for our annual summer gathering. What started as a small thank-you event has grown into one of the highlights of our year.</p>
+      <p class="lede">On a warm Saturday in July, the courtyard outside our Sydenham office filled with familiar faces — residents, families, support workers and neighbours — for our annual summer gathering. What started as a small thank-you event has grown into one of the highlights of our year.</p>
 
       <h2>A day built on connection</h2>
       <p>There was food from a dozen different traditions — samosas, jerk chicken, bara brith, and a particularly popular rum cake contributed by one of our longest-standing clients. A local steel band played through the afternoon, and for an hour or so it felt less like an event and more like a street party in the best possible sense.</p>
@@ -147,15 +147,15 @@ const posts = [
     tags: ["Nutrition", "Hydration", "Wellbeing", "Care tips"],
   },
   {
-    slug: "choosing-a-domiciliary-care-provider-a-family-guide",
-    title: "Choosing a domiciliary care provider: a family guide",
-    excerpt: "The questions worth asking, the standards worth expecting, and how to find care that truly fits.",
+    slug: "choosing-a-supported-living-provider-a-family-guide",
+    title: "Choosing a supported living provider: a family guide",
+    excerpt: "The questions worth asking, the standards worth expecting, and how to find the right supported living service.",
     content: `
-      <p class="lede">Choosing a domiciliary care provider for yourself or a family member is one of the most significant decisions you'll make. It deserves careful thought, clear information and the confidence to ask difficult questions. This guide is designed to help you do exactly that.</p>
+      <p class="lede">Choosing a supported living provider for yourself or a family member is one of the most significant decisions you'll make. It deserves careful thought, clear information and the confidence to ask difficult questions. This guide is designed to help you do exactly that.</p>
 
       <h2>What to look for</h2>
-      <p>Start with CQC registration — every care provider working in England must be registered with the Care Quality Commission, and their inspection reports are publicly available at cqc.org.uk. Look not just at the rating but at the detail: what was praised, what was flagged, and how the provider responded.</p>
-      <p>Ask about staff continuity. High turnover is one of the clearest warning signs in domiciliary care — it undermines the relationships that make good care possible. Ask how long staff typically stay, what their induction looks like, and how the provider handles cover when a regular carer is unavailable.</p>
+      <p>Start with CQC registration — every care and support provider working in England must be registered with the Care Quality Commission, and their inspection reports are publicly available at cqc.org.uk. Look not just at the rating but at the detail: what was praised, what was flagged, and how the provider responded.</p>
+      <p>Ask about staff continuity. High turnover is one of the clearest warning signs in supported living — it undermines the relationships that make meaningful support possible. Ask how long staff typically stay, what their induction looks like, and how the provider handles cover when a regular support worker is unavailable.</p>
 
       <h2>Questions worth asking</h2>
       <p>How will the care plan be built — and who will be involved? A good provider will assess the person's needs, preferences and goals carefully before writing a care plan, and will review it regularly. The person receiving care should be genuinely central to that process, not an afterthought.</p>
@@ -228,13 +228,13 @@ const posts = [
   {
     slug: "volunteers-needed-for-our-autumn-coffee-mornings",
     title: "Volunteers needed for our autumn coffee mornings",
-    excerpt: "Join our friendly coffee mornings across Plumstead — a warm welcome, good company and a cuppa await.",
+    excerpt: "Join our friendly coffee mornings across Sydenham and South London — a warm welcome, good company and a cuppa await.",
     content: `
       <p class="lede">Starting this September, we're launching a series of monthly coffee mornings for clients, families and anyone in the local community who'd like to connect. We're looking for volunteers to help make these events warm, welcoming and well-run — and we'd love your help.</p>
 
       <h2>What the role involves</h2>
       <p>Coffee morning volunteers help with setting up the space, welcoming guests, serving refreshments and generally making sure everyone feels at home. No formal care experience is needed — the most important qualities are warmth, patience and a genuine enjoyment of conversation.</p>
-      <p>Sessions run from 10am to 12 noon on the second Saturday of each month, at locations across Plumstead and Woolwich. We'll provide full briefing beforehand, and our staff will always be present to support you. Most volunteers tell us the mornings are over before they know it.</p>
+      <p>Sessions run from 10am to 12 noon on the second Saturday of each month, at locations across Sydenham and South London. We'll provide full briefing beforehand, and our staff will always be present to support you. Most volunteers tell us the mornings are over before they know it.</p>
 
       <h2>Get involved</h2>
       <p>If you're interested in volunteering, please get in touch via our contact page or call us directly. We welcome volunteers of all ages and backgrounds — the only requirement is a kind heart and a bit of time. In return, you'll meet some remarkable people and become part of a community that genuinely looks out for each other.</p>

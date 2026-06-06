@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <h2>1. Who we are</h2>
-            <p>DeRivian Care Ltd is a domiciliary care provider registered in England. Our registered office is 61 Ann Street, Plumstead, London SE18 7LS. For any question about this policy or your information, contact us at <a href="mailto:info@derivian.com">info@derivian.com</a> or +44 (0)20 8305 0000. We are the &quot;data controller&quot; responsible for the personal information described here.</p>
+            <p>DeRivian Care Ltd is a supported living provider registered in England. Our registered office is 24a Sydenham Road, London, United Kingdom, SE26 5QW. For any question about this policy or your information, contact us at <a href="mailto:info@derivian.co.uk">info@derivian.co.uk</a> or +44 (0)20 8305 0000. We are the &quot;data controller&quot; responsible for the personal information described here.</p>
 
             <h2>2. Information we collect</h2>
             <p>We only collect information you choose to give us. Through this website that is limited to:</p>
@@ -55,10 +55,10 @@ export default function PrivacyPolicyPage() {
             <p>We do not sell your personal information. We share it only where necessary to provide our services — for example with members of your care team — or where we are required to by law or for safeguarding reasons. Our contact page displays an embedded map from OpenStreetMap; loading it may expose your IP address to that provider, as with any third-party map.</p>
 
             <h2>8. How long we keep your information</h2>
-            <p>We keep enquiry details only for as long as needed to deal with your request and for a reasonable period afterwards in case you contact us again. Where you become a client, care records are retained in line with the statutory retention periods that apply to adult social care.</p>
+            <p>We keep enquiry details only for as long as needed to deal with your request and for a reasonable period afterwards in case you contact us again. Where you become a service user, support records are retained in line with the statutory retention periods that apply to adult social care.</p>
 
             <h2>9. Your rights</h2>
-            <p>You have the right to access the personal information we hold about you, to ask us to correct or delete it, to object to or restrict its use, and to withdraw consent at any time. To exercise any of these rights, email <a href="mailto:info@derivian.com">info@derivian.com</a> and we will respond within one month.</p>
+            <p>You have the right to access the personal information we hold about you, to ask us to correct or delete it, to object to or restrict its use, and to withdraw consent at any time. To exercise any of these rights, email <a href="mailto:info@derivian.co.uk">info@derivian.co.uk</a> and we will respond within one month.</p>
 
             <h2>10. Complaints</h2>
             <p>If you are unhappy with how we have handled your information, please tell us first so we can put it right. You also have the right to complain to the Information Commissioner&apos;s Office (ICO), the UK supervisory authority, at ico.org.uk.</p>
@@ -67,7 +67,7 @@ export default function PrivacyPolicyPage() {
             <p>We may update this policy from time to time. When we do, we will revise the &quot;last updated&quot; date above and, where changes are significant, make this clear on the website.</p>
 
             <h2>12. Contact us</h2>
-            <p>Questions about your privacy are always welcome. Reach us at <a href="mailto:info@derivian.com">info@derivian.com</a>, by phone on +44 (0)20 8305 0000, or by writing to DeRivian Care Ltd, 61 Ann Street, Plumstead, London SE18 7LS.</p>
+            <p>Questions about your privacy are always welcome. Reach us at <a href="mailto:info@derivian.co.uk">info@derivian.co.uk</a>, by phone on +44 (0)20 8305 0000, or by writing to DeRivian Care Ltd, 24a Sydenham Road, London, United Kingdom, SE26 5QW.</p>
           </div>
         </div>
       </section>

@@ -6,11 +6,11 @@ import "./globals.css"
 
 export const metadata = {
   title: {
-    default: "DeRivian Care — Domiciliary care across London",
+    default: "DeRivian Care — Supported living across London",
     template: "%s — DeRivian Care",
   },
   description:
-    "DeRivian Care Ltd provides personalised, compassionate domiciliary care for adults across London — helping people live safely and independently at home.",
+    "DeRivian Care Ltd provides personalised supported living services for adults across London — empowering people to live independently, build life skills and thrive in their own homes.",
 }
 
 export default function RootLayout({ children }) {

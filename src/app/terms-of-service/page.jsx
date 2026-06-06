@@ -34,7 +34,7 @@ export default function TermsOfServicePage() {
             <p>We may revise these Terms from time to time. The version published on this page is the one that applies to your use of the site. We will update the &quot;last updated&quot; date when changes are made; continued use of the site means you accept the revised Terms.</p>
 
             <h2>3. Description of services</h2>
-            <p>This website provides information about DeRivian&apos;s domiciliary care services and lets you contact us, make enquiries and referrals, and subscribe to updates. The website itself is informational and does not constitute the delivery of care, a clinical assessment, or a binding offer of services.</p>
+            <p>This website provides information about DeRivian&apos;s supported living services and lets you contact us, make enquiries and referrals, and subscribe to updates. The website itself is informational and does not constitute the delivery of support, a formal assessment, or a binding offer of services.</p>
 
             <h2>4. User responsibilities</h2>
             <p>You agree to use the site lawfully and not to misuse it, attempt to gain unauthorised access, or submit false, misleading or harmful information. When you complete a form, you are responsible for ensuring the details you provide are accurate and that you have the right to share any information about another person.</p>
@@ -55,7 +55,7 @@ export default function TermsOfServicePage() {
             <p>These Terms are governed by the laws of England and Wales, and any disputes will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
 
             <h2>10. Contact information</h2>
-            <p>For any questions about these Terms, contact us at <a href="mailto:info@derivian.com">info@derivian.com</a>, by phone on +44 (0)20 8305 0000, or by writing to DeRivian Care Ltd, 61 Ann Street, Plumstead, London SE18 7LS.</p>
+            <p>For any questions about these Terms, contact us at <a href="mailto:info@derivian.co.uk">info@derivian.co.uk</a>, by phone on +44 (0)20 8305 0000, or by writing to DeRivian Care Ltd, 24a Sydenham Road, London, United Kingdom, SE26 5QW.</p>
           </div>
         </div>
       </section>
