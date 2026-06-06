@@ -1713,3 +1713,115 @@ html.easyread-on .form-pair--stack {
 html.easyread-on .footer__form {
   flex-direction: column;
 }
+
+/* ============================================================ LEGAL / PROSE additions */
+.legal-meta {
+  font-size: var(--text-small);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.prose a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+.prose a:hover {
+  color: var(--burnt-sienna-dark);
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 0.6rem;
+}
+.prose li {
+  color: var(--text);
+  line-height: 1.5;
+}
+.prose li::marker {
+  color: var(--muted);
+}
+
+/* ============================================================ COOKIE PREFERENCES PANEL */
+.prefs {
+  max-width: 48rem;
+  margin: clamp(2.5rem, 1.5rem + 3vw, 4rem) auto 0;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 0;
+  padding: clamp(1.5rem, 1rem + 1.5vw, 2.25rem);
+}
+.prefs__head {
+  margin-bottom: 1.5rem;
+}
+.prefs__title {
+  font-size: var(--text-h5);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+.prefs__sub {
+  font-size: var(--text-small);
+}
+.prefs__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.prefs__item-name {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.prefs__item-desc {
+  font-size: var(--text-small);
+}
+.prefs__badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-button);
+  font-size: var(--text-small);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.prefs__badge::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--muted);
+}
+.prefs__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.25rem;
+  margin-top: 1.5rem;
+}
+.prefs__foot .btn {
+  flex: none;
+}
+.prefs__note {
+  margin: 0;
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--fountain-blue-dark);
+}
+@media (max-width: 520px) {
+  .prefs__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .prefs__foot .btn {
+    width: 100%;
+  }
+}

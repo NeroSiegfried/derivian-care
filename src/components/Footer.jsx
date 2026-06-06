@@ -110,9 +110,9 @@ export default function Footer() {
         </div>
         <div className="footer__bar">
           <ul className="footer__legal">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookies Settings</a></li>
+            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link href="/terms-of-service">Terms of Service</Link></li>
+            <li><Link href="/cookies-settings">Cookies Settings</Link></li>
           </ul>
           <p>© {siteConfig.year} DeRivian Care Ltd. All rights reserved.</p>
         </div>
