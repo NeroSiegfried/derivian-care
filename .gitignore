@@ -3,10 +3,11 @@
 *.fig
 Gemini_Generated_Image*
 derivian_project/
-untitled-design/
+untitled-design*/
 node_modules/
 .env
 .env.local
 .vercel
 .claude/
 .vite/
+.next/
