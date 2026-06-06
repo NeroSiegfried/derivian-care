@@ -148,50 +148,24 @@ export default async function HomePage() {
             <p className="lead">Stories, guidance and insights from across our community.</p>
           </div>
           <div className="grid grid--3">
-            {posts.length > 0
-              ? posts.map((post) => (
-                  <article key={post.slug} className="post reveal">
-                    <Link className="post__media" href={`/blog/${post.slug}`}>
-                      <div className="img-frame ratio-3-2">
-                        <img src={post.imageUrl} alt={post.imageAlt} />
-                      </div>
-                    </Link>
-                    <div className="post__meta">
-                      <span className="badge">{post.category}</span>
-                      <span className="min">{post.readTime} min read</span>
-                    </div>
-                    <h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3>
-                    <p>{post.excerpt}</p>
-                    <Link className="btn btn--link" href={`/blog/${post.slug}`}>
-                      Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
-                    </Link>
-                  </article>
-                ))
-              : (
-                <>
-                  <article className="post reveal">
-                    <Link className="post__media" href="/blog"><div className="img-frame ratio-3-2"><img src="/images/blog-0.jpg" alt="Two people chatting warmly on a sofa at home" /></div></Link>
-                    <div className="post__meta"><span className="badge">Care</span><span className="min">4 min read</span></div>
-                    <h3><Link href="/blog">Building trust through consistent care</Link></h3>
-                    <p>How familiar faces and steady routines create the foundation for real independence.</p>
-                    <Link className="btn btn--link" href="/blog">Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg></Link>
-                  </article>
-                  <article className="post reveal">
-                    <Link className="post__media" href="/blog"><div className="img-frame ratio-3-2"><img src="/images/blog-1.jpg" alt="A person using a tablet at a cosy table" /></div></Link>
-                    <div className="post__meta"><span className="badge">Guidelines</span><span className="min">5 min read</span></div>
-                    <h3><Link href="/blog">Understanding CQC standards in domiciliary care</Link></h3>
-                    <p>What quality care looks like and how we meet those standards every single day.</p>
-                    <Link className="btn btn--link" href="/blog">Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg></Link>
-                  </article>
-                  <article className="post reveal">
-                    <Link className="post__media" href="/blog"><div className="img-frame ratio-3-2"><img src="/images/blog-2.jpg" alt="Two people relaxing together" /></div></Link>
-                    <div className="post__meta"><span className="badge">Tips</span><span className="min">3 min read</span></div>
-                    <h3><Link href="/blog">Staying hydrated through the seasons</Link></h3>
-                    <p>Simple, practical ways to maintain good hydration and support overall wellbeing.</p>
-                    <Link className="btn btn--link" href="/blog">Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg></Link>
-                  </article>
-                </>
-              )}
+            {posts.map((post) => (
+              <article key={post.slug} className="post reveal">
+                <Link className="post__media" href={`/blog/${post.slug}`}>
+                  <div className="img-frame ratio-3-2">
+                    <img src={post.imageUrl} alt={post.imageAlt} />
+                  </div>
+                </Link>
+                <div className="post__meta">
+                  <span className="badge">{post.category}</span>
+                  <span className="min">{post.readTime} min read</span>
+                </div>
+                <h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3>
+                <p>{post.excerpt}</p>
+                <Link className="btn btn--link" href={`/blog/${post.slug}`}>
+                  Read more <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
+                </Link>
+              </article>
+            ))}
           </div>
           <div className="actions" style={{ justifyContent: "center", marginTop: "var(--section-y)" }}>
             <Link className="btn btn--secondary" href="/blog">View blogs</Link>
