@@ -28,7 +28,7 @@ module.exports = async function handler(req, res) {
         from: fromAddress,
         to: [toAddress],
         subject: "New newsletter subscriber",
-        html: `<p>New subscriber: <a href="mailto:${email}">${email}</a></p>`,
+        html: `<p>New subscriber: <a href="mailto:${email.replace(/"/g, "&quot;")}">${email.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</a></p>`,
       }),
     });
 

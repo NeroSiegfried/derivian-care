@@ -1,9 +1,12 @@
 .DS_Store
 *.zip
 *.fig
+Gemini_Generated_Image*
 derivian_project/
 untitled-design/
 node_modules/
 .env
 .env.local
 .vercel
+.claude/
+.vite/

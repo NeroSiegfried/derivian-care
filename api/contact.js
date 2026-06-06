@@ -1,3 +1,12 @@
+function esc(str) {
+  return String(str ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
@@ -18,14 +27,14 @@ module.exports = async function handler(req, res) {
   const fromAddress = process.env.FROM_EMAIL || "DeRivian Website <noreply@derivian.com>";
 
   const html = `
-    <h2>New inquiry from ${firstName} ${lastName}</h2>
+    <h2>New inquiry from ${esc(firstName)} ${esc(lastName)}</h2>
     <table style="border-collapse:collapse;width:100%;max-width:600px">
-      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Name</td><td style="padding:8px;border-bottom:1px solid #eee">${firstName} ${lastName}</td></tr>
-      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Email</td><td style="padding:8px;border-bottom:1px solid #eee"><a href="mailto:${email}">${email}</a></td></tr>
-      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Phone</td><td style="padding:8px;border-bottom:1px solid #eee">${phone || "—"}</td></tr>
-      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">How can we help?</td><td style="padding:8px;border-bottom:1px solid #eee">${help || "—"}</td></tr>
-      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Situation</td><td style="padding:8px;border-bottom:1px solid #eee">${situation || "—"}</td></tr>
-      <tr><td style="padding:8px;font-weight:bold">Message</td><td style="padding:8px;white-space:pre-wrap">${message || "—"}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Name</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(firstName)} ${esc(lastName)}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Email</td><td style="padding:8px;border-bottom:1px solid #eee"><a href="mailto:${esc(email)}">${esc(email)}</a></td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Phone</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(phone) || "—"}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">How can we help?</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(help) || "—"}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee">Situation</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(situation) || "—"}</td></tr>
+      <tr><td style="padding:8px;font-weight:bold">Message</td><td style="padding:8px;white-space:pre-wrap">${esc(message) || "—"}</td></tr>
     </table>
   `;
 
