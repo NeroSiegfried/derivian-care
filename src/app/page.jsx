@@ -2,18 +2,21 @@ import Link from "next/link"
 import Accordion from "@/components/Accordion"
 import { siteConfig } from "@/lib/config"
 import { prisma } from "@/lib/db"
+import { STATIC_POSTS } from "@/lib/staticPosts"
 
 async function getRecentPosts() {
   try {
-    return (await prisma?.post.findMany({
+    const rows = (await prisma?.post.findMany({
       where: { featured: false },
       orderBy: { publishedAt: "desc" },
       take: 3,
       select: { slug: true, title: true, excerpt: true, category: true, readTime: true, imageUrl: true, imageAlt: true },
     })) ?? []
+    if (rows.length > 0) return rows
   } catch {
-    return []
+    // fall through to static
   }
+  return STATIC_POSTS.filter((p) => !p.featured).slice(0, 3)
 }
 
 export default async function HomePage() {

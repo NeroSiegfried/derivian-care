@@ -1,6 +1,7 @@
 import Link from "next/link"
 import BlogGrid from "@/components/BlogGrid"
 import { prisma } from "@/lib/db"
+import { STATIC_POSTS } from "@/lib/staticPosts"
 
 export const metadata = {
   title: "Blog",
@@ -10,7 +11,7 @@ export const metadata = {
 
 async function getPosts() {
   try {
-    return (await prisma?.post.findMany({
+    const rows = (await prisma?.post.findMany({
       orderBy: { publishedAt: "desc" },
       select: {
         id: true,
@@ -25,8 +26,9 @@ async function getPosts() {
         imageAlt: true,
       },
     })) ?? []
+    return rows.length > 0 ? rows : STATIC_POSTS
   } catch {
-    return []
+    return STATIC_POSTS
   }
 }
 

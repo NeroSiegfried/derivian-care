@@ -1,26 +1,33 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { prisma } from "@/lib/db"
+import { STATIC_POSTS } from "@/lib/staticPosts"
 
 async function getPost(slug) {
   try {
-    return await prisma?.post.findUnique({ where: { slug } })
+    const row = await prisma?.post.findUnique({ where: { slug } })
+    if (row) return row
   } catch {
-    return null
+    // fall through to static
   }
+  return STATIC_POSTS.find((p) => p.slug === slug) ?? null
 }
 
 async function getRelated(post) {
   try {
-    return (await prisma?.post.findMany({
+    const rows = (await prisma?.post.findMany({
       where: { categoryKey: post.categoryKey, slug: { not: post.slug } },
       orderBy: { publishedAt: "desc" },
       take: 3,
       select: { slug: true, title: true, category: true, readTime: true, imageUrl: true, imageAlt: true },
     })) ?? []
+    if (rows.length > 0) return rows
   } catch {
-    return []
+    // fall through to static
   }
+  return STATIC_POSTS
+    .filter((p) => p.categoryKey === post.categoryKey && p.slug !== post.slug)
+    .slice(0, 3)
 }
 
 export async function generateMetadata({ params }) {
