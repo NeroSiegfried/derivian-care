@@ -5,12 +5,12 @@ import { prisma } from "@/lib/db"
 
 async function getRecentPosts() {
   try {
-    return await prisma.post.findMany({
+    return (await prisma?.post.findMany({
       where: { featured: false },
       orderBy: { publishedAt: "desc" },
       take: 3,
       select: { slug: true, title: true, excerpt: true, category: true, readTime: true, imageUrl: true, imageAlt: true },
-    })
+    })) ?? []
   } catch {
     return []
   }

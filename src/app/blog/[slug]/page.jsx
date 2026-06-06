@@ -4,7 +4,7 @@ import { prisma } from "@/lib/db"
 
 async function getPost(slug) {
   try {
-    return await prisma.post.findUnique({ where: { slug } })
+    return await prisma?.post.findUnique({ where: { slug } })
   } catch {
     return null
   }
@@ -12,12 +12,12 @@ async function getPost(slug) {
 
 async function getRelated(post) {
   try {
-    return await prisma.post.findMany({
+    return (await prisma?.post.findMany({
       where: { categoryKey: post.categoryKey, slug: { not: post.slug } },
       orderBy: { publishedAt: "desc" },
       take: 3,
       select: { slug: true, title: true, category: true, readTime: true, imageUrl: true, imageAlt: true },
-    })
+    })) ?? []
   } catch {
     return []
   }

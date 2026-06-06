@@ -1,13 +1,13 @@
 "use client"
 import { useEffect } from "react"
+import { usePathname } from "next/navigation"
 
 export default function RevealObserver() {
-  useEffect(() => {
-    const reveals = document.querySelectorAll(".reveal")
-    if (!reveals.length) return
+  const pathname = usePathname()
 
+  useEffect(() => {
     if (!("IntersectionObserver" in window)) {
-      reveals.forEach((r) => r.classList.add("is-in"))
+      document.querySelectorAll(".reveal").forEach((r) => r.classList.add("is-in"))
       return
     }
 
@@ -23,9 +23,16 @@ export default function RevealObserver() {
       { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
     )
 
-    reveals.forEach((r) => io.observe(r))
-    return () => io.disconnect()
-  }, [])
+    // Small delay so React has finished committing the new page's DOM
+    const timer = setTimeout(() => {
+      document.querySelectorAll(".reveal:not(.is-in)").forEach((r) => io.observe(r))
+    }, 50)
+
+    return () => {
+      clearTimeout(timer)
+      io.disconnect()
+    }
+  }, [pathname])
 
   return null
 }

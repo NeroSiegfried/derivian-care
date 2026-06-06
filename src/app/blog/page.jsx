@@ -10,7 +10,7 @@ export const metadata = {
 
 async function getPosts() {
   try {
-    return await prisma.post.findMany({
+    return (await prisma?.post.findMany({
       orderBy: { publishedAt: "desc" },
       select: {
         id: true,
@@ -24,7 +24,7 @@ async function getPosts() {
         imageUrl: true,
         imageAlt: true,
       },
-    })
+    })) ?? []
   } catch {
     return []
   }
