@@ -19,7 +19,7 @@ export default function ServicesPage() {
               We provide tailored, person-centred supported living packages for adults with learning disabilities, autism, mental health conditions and physical disabilities. Each support plan is co-produced with you — built around your goals and your vision for independent living.
             </p>
             <div className="hero__actions">
-              <Link className="btn btn--primary btn--lg" href="/contact">Request a referral</Link>
+              <Link className="btn btn--primary btn--lg" href="/contact?t=referral#form">Request a referral</Link>
               <Link className="btn btn--secondary btn--lg" href="#core">Explore services</Link>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function ServicesPage() {
               <p className="eyebrow">Everyday help</p>
               <h3>Practical support for a well-run home</h3>
               <p className="lead">We support you with cooking, cleaning, shopping and managing your household — working alongside you at your pace, so your home stays a place where you can truly thrive. The goal is always to build your confidence, not your dependency.</p>
-              <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
+              <div className="actions"><Link className="btn btn--secondary" href="/contact?t=daily-living#form">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
               <img src="/images/32.jpg" alt="A resident going about their daily routine at home with light support" loading="lazy" />
@@ -55,7 +55,7 @@ export default function ServicesPage() {
               <p className="eyebrow">Building independence</p>
               <h3>Skills that unlock the life you want</h3>
               <p className="lead">Managing money, cooking meals, using public transport, handling a tenancy — these are the building blocks of independent living. We work with you at your own pace to develop these skills in a way that feels empowering, not patronising.</p>
-              <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
+              <div className="actions"><Link className="btn btn--secondary" href="/contact?t=life-skills#form">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
               <img src="/images/33.jpg" alt="A support worker and resident working together on a practical life skill" loading="lazy" />
@@ -70,7 +70,7 @@ export default function ServicesPage() {
               <p className="eyebrow">Out in the world</p>
               <h3>Connected, active and part of your community</h3>
               <p className="lead">A good life doesn&apos;t stop at your front door. We support you to access social activities, leisure, education, volunteering and employment — building friendships and connections that are yours, not ours.</p>
-              <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
+              <div className="actions"><Link className="btn btn--secondary" href="/contact?t=community#form">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
               <img src="/images/34.jpg" alt="A resident and support worker heading into the community together" loading="lazy" />
@@ -85,7 +85,7 @@ export default function ServicesPage() {
               <p className="eyebrow">Dignity first</p>
               <h3>Sensitive support, always with respect</h3>
               <p className="lead">Where personal care is part of your support, it is delivered gently and discreetly — always at your pace, always on your terms. We protect your dignity and your choices in every moment.</p>
-              <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
+              <div className="actions"><Link className="btn btn--secondary" href="/contact?t=personal-care#form">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
               <img src="/images/10.jpg" alt="A support worker sitting attentively with a resident in their home" loading="lazy" />
@@ -100,7 +100,7 @@ export default function ServicesPage() {
               <p className="eyebrow">Safe &amp; healthy</p>
               <h3>Joined-up support for your whole health</h3>
               <p className="lead">From medication management and GP access to mental health monitoring and health appointments — we coordinate closely with your wider healthcare team, keeping clear records and responding quickly when anything changes.</p>
-              <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
+              <div className="actions"><Link className="btn btn--secondary" href="/contact?t=health#form">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
               <img src="/images/35.jpg" alt="A support worker carefully reviewing medication and health records" loading="lazy" />
@@ -115,7 +115,7 @@ export default function ServicesPage() {
               <p className="eyebrow">Specialist support</p>
               <h3>Consistent, informed support over time</h3>
               <p className="lead">For people with more complex needs — including autism, mental health conditions, acquired brain injuries and behaviours that challenge — we build structured, consistent support with clear risk management and regular review. We adapt as you do.</p>
-              <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
+              <div className="actions"><Link className="btn btn--secondary" href="/contact?t=complex-needs#form">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
               <img src="/images/11.jpg" alt="A support worker reviewing a care plan with a resident on a tablet" loading="lazy" />
@@ -147,7 +147,7 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="actions">
-                <Link className="btn btn--secondary" href="/contact">Discuss your needs</Link>
+                <Link className="btn btn--secondary" href="/contact?t=discuss-needs#form">Discuss your needs</Link>
                 <Link className="btn btn--link" href="#transparency">
                   How we stay transparent <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
                 </Link>
@@ -183,7 +183,7 @@ export default function ServicesPage() {
                 <div className="split__point"><svg className="icon" aria-hidden="true"><use href="#i-chat" /></svg><p>Direct, secure communication with your support team</p></div>
               </div>
               <div className="actions">
-                <Link className="btn btn--secondary" href="/contact">See it in action</Link>
+                <Link className="btn btn--secondary" href="/contact?t=transparency#form">See it in action</Link>
               </div>
             </div>
           </div>
@@ -213,8 +213,8 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="actions">
-                <Link className="btn btn--primary" href="/contact">Make a referral</Link>
-                <Link className="btn btn--link" href="/contact">
+                <Link className="btn btn--primary" href="/contact?t=referral#form">Make a referral</Link>
+                <Link className="btn btn--link" href="/contact?t=service-spec#form">
                   Request a service specification <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
                 </Link>
               </div>
@@ -236,7 +236,7 @@ export default function ServicesPage() {
               <h3>Not sure what support you need?</h3>
               <p className="lead">Start with a no-obligation conversation. Whether you&apos;re an individual, a family member or a professional referrer — we&apos;ll listen, understand your situation and explain how we can help.</p>
             </div>
-            <Link className="btn btn--primary" href="/contact">Get in touch</Link>
+            <Link className="btn btn--primary" href="/contact?t=general#form">Get in touch</Link>
           </div>
         </div>
       </section>

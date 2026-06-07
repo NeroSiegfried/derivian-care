@@ -2,9 +2,10 @@
 import { useState } from "react"
 import { siteConfig } from "@/lib/config"
 
-export default function ContactForm() {
+export default function ContactForm({ defaultValues = null }) {
   const [sending, setSending] = useState(false)
   const [note, setNote] = useState(null)
+  const dv = defaultValues ?? {}
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -66,8 +67,8 @@ export default function ContactForm() {
       </div>
       <div className="field">
         <label className="label" htmlFor="help">How can we help?</label>
-        <select className="select" id="help" name="help">
-          <option value="" disabled defaultValue="">Select one</option>
+        <select className="select" id="help" name="help" defaultValue={dv.help ?? ""}>
+          <option value="" disabled>Select one</option>
           <option>Arranging care for myself</option>
           <option>Arranging care for a loved one</option>
           <option>Professional / local authority referral</option>
@@ -78,12 +79,12 @@ export default function ContactForm() {
       <fieldset className="field" style={{ border: 0, padding: 0 }}>
         <legend className="label" style={{ marginBottom: ".85rem" }}>What is your situation?</legend>
         <div className="form-radios">
-          <label className="radio"><input type="radio" name="situation" value="service" /> Service inquiry</label>
-          <label className="radio"><input type="radio" name="situation" value="referral" /> Care referral</label>
-          <label className="radio"><input type="radio" name="situation" value="general" /> General question</label>
-          <label className="radio"><input type="radio" name="situation" value="safeguarding" /> Safeguarding concern</label>
-          <label className="radio"><input type="radio" name="situation" value="professional" /> Professional inquiry</label>
-          <label className="radio"><input type="radio" name="situation" value="other" /> Other</label>
+          <label className="radio"><input type="radio" name="situation" value="service" defaultChecked={dv.situation === "service"} /> Service inquiry</label>
+          <label className="radio"><input type="radio" name="situation" value="referral" defaultChecked={dv.situation === "referral"} /> Care referral</label>
+          <label className="radio"><input type="radio" name="situation" value="general" defaultChecked={dv.situation === "general"} /> General question</label>
+          <label className="radio"><input type="radio" name="situation" value="safeguarding" defaultChecked={dv.situation === "safeguarding"} /> Safeguarding concern</label>
+          <label className="radio"><input type="radio" name="situation" value="professional" defaultChecked={dv.situation === "professional"} /> Professional inquiry</label>
+          <label className="radio"><input type="radio" name="situation" value="other" defaultChecked={dv.situation === "other"} /> Other</label>
         </div>
       </fieldset>
       <div className="field">
@@ -93,6 +94,7 @@ export default function ContactForm() {
           id="message"
           name="message"
           placeholder="Share a few details about your situation and how we can help"
+          defaultValue={dv.message ?? ""}
         />
       </div>
       <label className="checkbox">

@@ -51,6 +51,69 @@ export const siteConfig = {
     },
   ],
 
+  contactTemplates: {
+    general: {
+      help: "Something else",
+      situation: "general",
+      message: "Hello, I'd like to find out more about your supported living services. Please get in touch at your earliest convenience.",
+    },
+    referral: {
+      help: "Professional / local authority referral",
+      situation: "referral",
+      message: "I would like to make a referral to DeRivian Care. Please could you send me your referral pack and confirm the next steps? I can be reached at the contact details above.",
+    },
+    "work-with-us": {
+      help: "Professional / local authority referral",
+      situation: "professional",
+      message: "I am interested in working with DeRivian Care as a commissioner or referrer. I would like to discuss how we could collaborate and what your referral process looks like.",
+    },
+    "daily-living": {
+      help: "Arranging care for myself",
+      situation: "service",
+      message: "I'd like to find out more about daily living support — help with cooking, cleaning, shopping and household management. Please could someone contact me to discuss what's available?",
+    },
+    "life-skills": {
+      help: "Arranging care for myself",
+      situation: "service",
+      message: "I'm interested in life skills development support, including managing money, cooking, using public transport and building towards greater independence. Please could someone get in touch to discuss options?",
+    },
+    community: {
+      help: "Arranging care for myself",
+      situation: "service",
+      message: "I'd like to find out more about community access and social inclusion support — including activities, leisure, education and community connections. Please could someone contact me?",
+    },
+    "personal-care": {
+      help: "Arranging care for myself",
+      situation: "service",
+      message: "I'm looking for personal care support and would like to discuss what is available and how it is delivered sensitively and with dignity. Please could someone get in touch?",
+    },
+    health: {
+      help: "Arranging care for myself",
+      situation: "service",
+      message: "I'd like to discuss health and wellbeing support, including medication management, GP access and coordination with healthcare teams. Please could someone contact me to talk through the options?",
+    },
+    "complex-needs": {
+      help: "Arranging care for myself",
+      situation: "service",
+      message: "I'm looking for specialist support for complex needs. I'd like to discuss a structured support arrangement and understand how your team would approach this. Please get in touch.",
+    },
+    "discuss-needs": {
+      help: "Arranging care for myself",
+      situation: "service",
+      message: "I'd like to discuss my support needs and find out whether DeRivian Care is the right fit for me. Please could someone from your team get in touch at a convenient time?",
+    },
+    transparency: {
+      help: "Professional / local authority referral",
+      situation: "professional",
+      message: "I'd like to see a demonstration of your digital care records and scheduling systems. Please could you arrange a walkthrough or send me more information about how your transparency systems work?",
+    },
+    "service-spec": {
+      help: "Professional / local authority referral",
+      situation: "professional",
+      message: "I'd like to receive your service specification. Please could you send this along with any relevant CQC documentation and information about your commissioning process?",
+    },
+  },
+
   faq: [
     {
       q: "What is supported living and how is it different from a care home?",

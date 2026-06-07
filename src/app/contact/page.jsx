@@ -7,7 +7,8 @@ export const metadata = {
     "Contact DeRivian Care Ltd — phone, email, 24/7 safeguarding line, and our secure referral and inquiry form. 24a Sydenham Road, London SE26 5QW.",
 }
 
-export default function ContactPage() {
+export default function ContactPage({ searchParams }) {
+  const template = searchParams?.t ? (siteConfig.contactTemplates?.[searchParams.t] ?? null) : null
   return (
     <main id="main">
       {/* Hero */}
@@ -85,7 +86,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="section scheme-1">
+      <section id="form" className="section scheme-1">
         <div className="container">
           <div className="split split--top">
             <div className="reveal">
@@ -109,7 +110,7 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-            <ContactForm />
+            <ContactForm defaultValues={template} />
           </div>
         </div>
       </section>

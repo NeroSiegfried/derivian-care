@@ -24,7 +24,7 @@ export default function AboutPage() {
             </p>
             <div className="hero__actions">
               <Link className="btn btn--primary btn--lg" href="/services">Our services</Link>
-              <Link className="btn btn--secondary btn--lg" href="/contact">Talk to us</Link>
+              <Link className="btn btn--secondary btn--lg" href="/contact?t=general#form">Talk to us</Link>
             </div>
           </div>
           <div className="img-frame ratio-2-1 reveal">
@@ -87,7 +87,7 @@ export default function AboutPage() {
                 </p>
                 <div className="actions">
                   <Link className="btn btn--secondary" href="#team">Meet the team</Link>
-                  <Link className="btn btn--link" href="/contact">
+                  <Link className="btn btn--link" href="/contact?t=work-with-us#form">
                     Work with us <svg className="ico icon" aria-hidden="true"><use href="#i-chev-right" /></svg>
                   </Link>
                 </div>
@@ -173,7 +173,7 @@ export default function AboutPage() {
               <h3>Looking to join our team?</h3>
               <p className="lead">We&apos;re always looking for compassionate, skilled people who share our values. Competitive pay, genuine development and a team that supports you as much as you support others.</p>
             </div>
-            <Link className="btn btn--primary" href="/contact">Get in touch</Link>
+            <Link className="btn btn--primary" href="/contact?t=general#form">Get in touch</Link>
           </div>
         </div>
       </section>

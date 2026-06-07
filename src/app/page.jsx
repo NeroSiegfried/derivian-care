@@ -31,7 +31,7 @@ export default async function HomePage() {
             </p>
             <div className="hero__actions">
               <Link className="btn btn--primary btn--lg" href="/services">Our Services</Link>
-              <Link className="btn btn--secondary btn--lg" href="/contact">Get in Touch</Link>
+              <Link className="btn btn--secondary btn--lg" href="/contact?t=general#form">Get in Touch</Link>
             </div>
           </div>
           <div className="hero__media reveal">
@@ -185,7 +185,7 @@ export default async function HomePage() {
               <h3>Referring someone to us?</h3>
               <p className="lead">We work with local authority commissioners, social workers, NHS continuing healthcare teams and self-funders. Our referral process is straightforward and we work to your timeline.</p>
             </div>
-            <Link className="btn btn--primary" href="/contact">Make a referral</Link>
+            <Link className="btn btn--primary" href="/contact?t=referral#form">Make a referral</Link>
           </div>
         </div>
       </section>
@@ -197,7 +197,7 @@ export default async function HomePage() {
             <h2>Questions</h2>
             <p className="lead">
               Find answers to common questions about our supported living services. Can&apos;t see yours?{" "}
-              <Link href="/contact" style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>Get in touch</Link>.
+              <Link href="/contact?t=general#form" style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>Get in touch</Link>.
             </p>
           </div>
           <Accordion items={siteConfig.faq} />
@@ -205,7 +205,7 @@ export default async function HomePage() {
             <h4>Ready to talk?</h4>
             <p className="lead">Get in touch with our friendly team today — we&apos;re here to help.</p>
             <div className="actions">
-              <Link className="btn btn--secondary" href="/contact">Contact us</Link>
+              <Link className="btn btn--secondary" href="/contact?t=general#form">Contact us</Link>
             </div>
           </div>
         </div>
