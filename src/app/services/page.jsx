@@ -25,7 +25,7 @@ export default function ServicesPage() {
           </div>
           <div className="hero__media reveal">
             <div className="img-frame ratio-2-1">
-              <img src="/images/feature-0.jpg" alt="People relaxing and talking together at home" />
+              <img src="/images/12.jpg" alt="A welcoming supported living property in south London" />
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function ServicesPage() {
               <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
-              <img src="/images/feature-0.jpg" alt="A resident going about their daily routine at home with light support" loading="lazy" />
+              <img src="/images/2.jpg" alt="A resident going about their daily routine at home with light support" loading="lazy" />
             </div>
           </div>
         </article>
@@ -58,7 +58,7 @@ export default function ServicesPage() {
               <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
-              <img src="/images/feature-2.jpg" alt="A support worker and resident working together on a practical life skill" loading="lazy" />
+              <img src="/images/4.jpg" alt="A support worker and resident working together on a practical life skill" loading="lazy" />
             </div>
           </div>
         </article>
@@ -73,7 +73,7 @@ export default function ServicesPage() {
               <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
-              <img src="/images/feature-3.jpg" alt="A resident and support worker heading into the community together" loading="lazy" />
+              <img src="/images/5.jpg" alt="A resident and support worker heading into the community together" loading="lazy" />
             </div>
           </div>
         </article>
@@ -88,7 +88,7 @@ export default function ServicesPage() {
               <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
-              <img src="/images/feature-2.jpg" alt="A support worker sitting attentively with a resident in their home" loading="lazy" />
+              <img src="/images/10.jpg" alt="A support worker sitting attentively with a resident in their home" loading="lazy" />
             </div>
           </div>
         </article>
@@ -103,7 +103,7 @@ export default function ServicesPage() {
               <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
-              <img src="/images/feature-4.jpg" alt="A support worker carefully reviewing medication and health records" loading="lazy" />
+              <img src="/images/6.jpg" alt="A support worker carefully reviewing medication and health records" loading="lazy" />
             </div>
           </div>
         </article>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
               <div className="actions"><Link className="btn btn--secondary" href="/contact">Arrange this support</Link></div>
             </div>
             <div className="svc-panel__media reveal">
-              <img src="/images/blog-1.jpg" alt="A support worker reviewing a care plan with a resident on a tablet" loading="lazy" />
+              <img src="/images/11.jpg" alt="A support worker reviewing a care plan with a resident on a tablet" loading="lazy" />
             </div>
           </div>
         </article>
@@ -155,7 +155,7 @@ export default function ServicesPage() {
             </div>
             <div className="split__media">
               <div className="img-frame ratio-4-3">
-                <img src="/images/blog-0.jpg" alt="A resident in their own home, relaxed and comfortable" loading="lazy" />
+                <img src="/images/7.jpg" alt="A resident in their own home, relaxed and comfortable" loading="lazy" />
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function ServicesPage() {
           <div className="split split--reverse reveal">
             <div className="split__media">
               <div className="img-frame ratio-4-3">
-                <img src="/images/blog-1.jpg" alt="A person reviewing information on a tablet at home" />
+                <img src="/images/8.jpg" alt="A person reviewing information on a tablet at home" />
               </div>
             </div>
             <div>
@@ -221,7 +221,7 @@ export default function ServicesPage() {
             </div>
             <div className="split__media">
               <div className="img-frame ratio-4-3">
-                <img src="/images/feature-1.jpg" alt="A support coordinator reviewing a referral with a colleague" loading="lazy" />
+                <img src="/images/3.jpg" alt="A support coordinator reviewing a referral with a colleague" loading="lazy" />
               </div>
             </div>
           </div>

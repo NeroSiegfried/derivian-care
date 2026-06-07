@@ -2,21 +2,18 @@ import Link from "next/link"
 import Accordion from "@/components/Accordion"
 import { siteConfig } from "@/lib/config"
 import { prisma } from "@/lib/db"
-import { STATIC_POSTS } from "@/lib/staticPosts"
 
 async function getRecentPosts() {
   try {
-    const rows = (await prisma?.post.findMany({
+    return (await prisma?.post.findMany({
       where: { featured: false },
       orderBy: { publishedAt: "desc" },
       take: 3,
       select: { slug: true, title: true, excerpt: true, category: true, readTime: true, imageUrl: true, imageAlt: true },
     })) ?? []
-    if (rows.length > 0) return rows
   } catch {
-    // fall through to static
+    return []
   }
-  return STATIC_POSTS.filter((p) => !p.featured).slice(0, 3)
 }
 
 export default async function HomePage() {
@@ -39,7 +36,7 @@ export default async function HomePage() {
           </div>
           <div className="hero__media reveal">
             <div className="img-frame ratio-2-1">
-              <img src="/images/hero.jpg" alt="A supported living resident spending time in their own home, relaxed and comfortable" />
+              <img src="/images/1.jpg" alt="A supported living resident spending time in their own home, relaxed and comfortable" />
             </div>
           </div>
         </div>
@@ -58,28 +55,28 @@ export default async function HomePage() {
           <div className="grid grid--4">
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-2.jpg" alt="A support worker and resident building a support plan together at a table" />
+                <img src="/images/4.jpg" alt="A support worker and resident building a support plan together at a table" />
               </div>
               <h4>Co-produced support plans</h4>
               <p>We develop every support plan with you — not for you. Your goals, your routines and your vision for independence shape every decision we make.</p>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-1.jpg" alt="Two support workers reviewing notes together — a small, consistent team" />
+                <img src="/images/3.jpg" alt="Two support workers reviewing notes together — a small, consistent team" />
               </div>
               <h4>Consistent, familiar team</h4>
               <p>A small, consistent team builds the real relationships that make progress possible. We invest in our staff so they stay — and so you always have people who truly know you.</p>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-0.jpg" alt="A resident confidently going about their daily routine independently" />
+                <img src="/images/2.jpg" alt="A resident confidently going about their daily routine independently" />
               </div>
               <h4>Empowering independence</h4>
               <p>We step back where we can, encourage where we should, and support where it counts — so you grow in confidence and live life on your own terms.</p>
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-3.jpg" alt="A support worker and resident from diverse backgrounds sharing a warm moment in the community" />
+                <img src="/images/5.jpg" alt="A support worker and resident from diverse backgrounds sharing a warm moment in the community" />
               </div>
               <h4>Inclusive &amp; culturally aware</h4>
               <p>We respect your culture, your language and your faith. London&apos;s diversity shapes how we work — every support plan honours the whole person, not just their assessed needs.</p>
@@ -101,7 +98,7 @@ export default async function HomePage() {
           <div className="grid grid--4">
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-0.jpg" alt="A resident going about their daily routine at home with light support" loading="lazy" />
+                <img src="/images/12-2.jpg" alt="A resident going about their daily routine at home with light support" loading="lazy" />
               </div>
               <h5>Daily living support</h5>
               <p>Practical help with cooking, shopping, cleaning and managing your home — so you can focus on the life you want to live.</p>
@@ -111,7 +108,7 @@ export default async function HomePage() {
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-2.jpg" alt="A support worker encouraging a resident to develop a new skill" loading="lazy" />
+                <img src="/images/14-2.jpg" alt="A support worker encouraging a resident to develop a new skill" loading="lazy" />
               </div>
               <h5>Life skills development</h5>
               <p>Budgeting, cooking, using public transport and managing your tenancy — building the skills that unlock real independence.</p>
@@ -121,7 +118,7 @@ export default async function HomePage() {
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-3.jpg" alt="A resident and support worker heading out into the community together" loading="lazy" />
+                <img src="/images/24.jpg" alt="A resident and support worker heading out into the community together" loading="lazy" />
               </div>
               <h5>Community access</h5>
               <p>Support to access social activities, leisure, education and employment — because a good life happens inside and outside your home.</p>
@@ -131,7 +128,7 @@ export default async function HomePage() {
             </article>
             <article className="feature reveal">
               <div className="img-frame ratio-16-9">
-                <img src="/images/feature-4.jpg" alt="A support worker calmly reviewing health and wellbeing notes with a resident" loading="lazy" />
+                <img src="/images/6.jpg" alt="A support worker calmly reviewing health and wellbeing notes with a resident" loading="lazy" />
               </div>
               <h5>Health &amp; wellbeing</h5>
               <p>Medication management, GP access and mental health support — joined-up care that keeps you safe, healthy and thriving.</p>
