@@ -1,1 +1,6 @@
-{}
+{
+  "functions": {
+    "src/app/api/contact/route.js": { "memory": 256 },
+    "src/app/api/newsletter/route.js": { "memory": 128 }
+  }
+}
