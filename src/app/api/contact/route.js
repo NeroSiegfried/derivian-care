@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"
+
 function esc(str) {
   return String(str ?? "")
     .replace(/&/g, "&amp;")
