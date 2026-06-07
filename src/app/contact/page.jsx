@@ -5,6 +5,17 @@ export const metadata = {
   title: "Contact Us",
   description:
     "Contact DeRivian Care Ltd — phone, email, 24/7 safeguarding line, and our secure referral and inquiry form. 24a Sydenham Road, London SE26 5QW.",
+  openGraph: {
+    title: "Contact DeRivian Care",
+    description: "Get in touch with our team by phone, email or our secure referral form. We respond within one working day.",
+    url: "https://derivian.co.uk/contact",
+    images: [{ url: "/images/1.jpg", width: 1200, height: 600, alt: "DeRivian Care — get in touch" }],
+  },
+  twitter: {
+    title: "Contact DeRivian Care",
+    description: "Get in touch with our team by phone, email or our secure referral form. We respond within one working day.",
+    images: ["/images/1.jpg"],
+  },
 }
 
 export default function ContactPage({ searchParams }) {

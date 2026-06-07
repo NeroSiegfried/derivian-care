@@ -4,6 +4,17 @@ export const metadata = {
   title: "Services",
   description:
     "Supported living services across London: daily living support, life skills development, community access, personal care, medication management and mental health support.",
+  openGraph: {
+    title: "Our Services — DeRivian Care",
+    description: "Supported living services across London: daily living support, life skills development, community access, personal care, medication management and mental health support.",
+    url: "https://derivian.co.uk/services",
+    images: [{ url: "/images/12.jpg", width: 1200, height: 600, alt: "Supported living services by DeRivian Care across London" }],
+  },
+  twitter: {
+    title: "Our Services — DeRivian Care",
+    description: "Supported living services across London: daily living support, life skills development, community access, personal care, medication management and mental health support.",
+    images: ["/images/12.jpg"],
+  },
 }
 
 export default function ServicesPage() {

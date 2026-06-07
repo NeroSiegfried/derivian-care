@@ -5,6 +5,17 @@ export const metadata = {
   title: "About Us",
   description:
     "Learn about DeRivian Care Ltd — our mission, our values of Care, Comfort and Compassion, the DeRivian way, and the leadership team behind our supported living services across London.",
+  openGraph: {
+    title: "About DeRivian Care",
+    description: "Learn about DeRivian Care Ltd — our mission, our values of Care, Comfort and Compassion, and the leadership team behind our supported living services across London.",
+    url: "https://derivian.co.uk/about",
+    images: [{ url: "/images/13.jpg", width: 1200, height: 600, alt: "DeRivian Care team and leadership" }],
+  },
+  twitter: {
+    title: "About DeRivian Care",
+    description: "Learn about DeRivian Care Ltd — our mission, our values of Care, Comfort and Compassion, and the leadership team behind our supported living services across London.",
+    images: ["/images/13.jpg"],
+  },
 }
 
 export default function AboutPage() {

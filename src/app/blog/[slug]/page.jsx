@@ -26,7 +26,25 @@ async function getRelated(post) {
 export async function generateMetadata({ params }) {
   const post = await getPost(params.slug)
   if (!post) return {}
-  return { title: post.title, description: post.excerpt }
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `https://derivian.co.uk/blog/${post.slug}`,
+      type: "article",
+      publishedTime: post.publishedAt,
+      authors: [post.authorName],
+      images: [{ url: post.imageUrl, alt: post.imageAlt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.imageUrl],
+    },
+  }
 }
 
 export default async function BlogPostPage({ params }) {

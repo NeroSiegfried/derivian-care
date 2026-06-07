@@ -6,6 +6,17 @@ export const metadata = {
   title: "Blog",
   description:
     "Stories, CQC updates, community news and supported living advice from DeRivian Care — supported living services across London.",
+  openGraph: {
+    title: "Blog — DeRivian Care",
+    description: "Stories, guidance and insights on supported living, independence and community from the DeRivian Care team.",
+    url: "https://derivian.co.uk/blog",
+    images: [{ url: "/images/1.jpg", width: 1200, height: 600, alt: "DeRivian Care blog" }],
+  },
+  twitter: {
+    title: "Blog — DeRivian Care",
+    description: "Stories, guidance and insights on supported living, independence and community from the DeRivian Care team.",
+    images: ["/images/1.jpg"],
+  },
 }
 
 async function getPosts() {
