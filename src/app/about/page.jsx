@@ -98,7 +98,7 @@ export default function AboutPage() {
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>01</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/4.jpg" alt="A support worker and resident building a support plan together at a table" loading="lazy" /></div>
+                <div className="img-frame ratio-3-2"><img src="/images/28.jpg" alt="A support worker and resident building a support plan together at a table" loading="lazy" /></div>
                 <h3>Co-produced support plans</h3>
                 <p>We develop every support plan with the person — not for them. Your goals, your routines and your definition of independence shape every decision, with regular reviews as your ambitions grow.</p>
               </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>02</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/2.jpg" alt="A familiar support worker greeting a resident warmly at their front door" loading="lazy" /></div>
+                <div className="img-frame ratio-3-2"><img src="/images/29.jpg" alt="A familiar support worker greeting a resident warmly at their front door" loading="lazy" /></div>
                 <h3>Consistent, familiar teams</h3>
                 <p>We assign a small, consistent team wherever possible. Continuity isn&apos;t just reassuring — it&apos;s what enables genuine relationships and the kind of trust that makes real progress possible for the people we support.</p>
               </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>03</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/5.jpg" alt="A support worker and resident sharing a moment together in the community" loading="lazy" /></div>
+                <div className="img-frame ratio-3-2"><img src="/images/30.jpg" alt="A support worker and resident sharing a moment together in the community" loading="lazy" /></div>
                 <h3>Inclusive &amp; culturally aware</h3>
                 <p>London&apos;s diversity is reflected in the people we support. We tailor every aspect of our approach to respect culture, language, faith and identity — because truly person-centred support honours the whole person.</p>
               </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
             <article className="deriway__panel">
               <div className="deriway__panel-inner">
                 <p className="deriway__step"><span>04</span> / 04</p>
-                <div className="img-frame ratio-3-2"><img src="/images/3.jpg" alt="A support worker reviewing digital support records on a tablet" loading="lazy" /></div>
+                <div className="img-frame ratio-3-2"><img src="/images/31.jpg" alt="A support worker reviewing digital support records on a tablet" loading="lazy" /></div>
                 <h3>Digital systems &amp; governance</h3>
                 <p>Our electronic support records, scheduling tools and quality audit frameworks deliver real-time transparency and consistent CQC alignment — so every stakeholder always has an accurate, up-to-date picture.</p>
               </div>

@@ -14,7 +14,7 @@ const posts = [
       <p>Continuity also protects dignity. When you've explained your routine and preferences once, you shouldn't have to explain them again to a stranger every shift. Consistent support workers carry that understanding with them, so support feels personal rather than procedural.</p>
 
       <figure>
-        <div class="img-frame ratio-2-1"><img src="/images/4.jpg" alt="A support worker and resident working on a plan together" /></div>
+        <div class="img-frame ratio-2-1"><img src="/images/27.jpg" alt="A support worker and resident sharing an easy domestic moment at home" /></div>
         <figcaption>Familiar faces and steady routines are what turn a support shift into a genuine relationship.</figcaption>
       </figure>
 
@@ -36,8 +36,8 @@ const posts = [
     authorRole: "Registered Manager",
     readTime: 4,
     publishedAt: new Date("2026-03-12"),
-    imageUrl: "/images/7.jpg",
-    imageAlt: "Two people in warm conversation on a sofa at home",
+    imageUrl: "/images/25.jpg",
+    imageAlt: "A support worker and resident sharing a natural, familiar moment at home",
     tags: ["Continuity of care", "Person-centred", "Safeguarding", "Independence"],
   },
   {
@@ -63,8 +63,8 @@ const posts = [
     authorRole: "Director",
     readTime: 5,
     publishedAt: new Date("2026-02-28"),
-    imageUrl: "/images/8.jpg",
-    imageAlt: "A person reviewing care information on a tablet",
+    imageUrl: "/images/26.jpg",
+    imageAlt: "A family member and coordinator reviewing a CQC report together",
     tags: ["CQC", "Quality", "Regulation", "Standards"],
   },
   {
@@ -116,7 +116,7 @@ const posts = [
     readTime: 3,
     publishedAt: new Date("2026-07-20"),
     imageUrl: "/images/14.jpg",
-    imageAlt: "People laughing together in a living room",
+    imageAlt: "Families and residents at an outdoor summer gathering",
     tags: ["Community", "Events", "Wellbeing"],
   },
   {
@@ -170,7 +170,7 @@ const posts = [
     readTime: 6,
     publishedAt: new Date("2026-01-15"),
     imageUrl: "/images/16.jpg",
-    imageAlt: "Two colleagues reviewing care notes together",
+    imageAlt: "A family meeting with a supported living coordinator to discuss care",
     tags: ["Choosing care", "Family guide", "CQC", "Quality"],
   },
   {
@@ -352,7 +352,7 @@ const posts = [
     readTime: 4,
     publishedAt: new Date("2025-03-08"),
     imageUrl: "/images/23.jpg",
-    imageAlt: "A carer and client planning care together on a sofa",
+    imageAlt: "A support worker listening attentively while a resident shares their goals",
     tags: ["Person-centred", "CQC", "Care planning", "Quality"],
   },
 ]

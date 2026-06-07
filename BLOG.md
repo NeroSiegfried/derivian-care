@@ -6,16 +6,13 @@ How to add, edit and manage blog posts on the DeRivian Care site.
 
 ## How posts are stored
 
-The site has two sources for blog posts, used in priority order:
+All blog content lives in the **Prisma Postgres database**. The seed file (`prisma/seed.js`) is the source of truth — it defines every post and pushes it to the database with `upsert`, so re-running it is always safe.
 
-1. **Database (live)** — posts stored in the Prisma Postgres database. Used on the live site in production.
-2. **Static fallback (`src/lib/staticPosts.js`)** — hardcoded posts used when the database is unavailable. Used during local development without a DB connection, and as a content safety net.
-
-When the database returns posts they take priority. If the database is unreachable, the static posts appear instead.
+There is no static fallback. If the database is unreachable, no posts are shown.
 
 ---
 
-## Adding a post — the quick way (database)
+## Adding a post
 
 ### 1. Add the post to `prisma/seed.js`
 
@@ -50,29 +47,35 @@ Open [`prisma/seed.js`](prisma/seed.js) and add a new object to the `posts` arra
   authorRole: "Registered Manager",
   readTime: 4,                            // Estimated minutes to read
   publishedAt: new Date("2026-06-07"),    // ISO date string
-  imageUrl: "/images/blog-0.jpg",         // See image reference below
+  imageUrl: "/images/25.jpg",            // Path to thumbnail — see Blog images below
   imageAlt: "Descriptive alt text for screen readers",
   tags: ["Tag one", "Tag two"],           // Array of strings, shown on post page
 },
 ```
 
-### 2. Run the seed script
+### 2. Add the image
+
+Drop your image file into `public/images/` (JPG, max 800px wide, under 200 KB — see compression below). Name it the next available number (e.g. `25.jpg` if 24 is the last existing one). Update `imageUrl` in the seed to match.
+
+See [IMAGES.md](IMAGES.md) for descriptions of all existing images and what each number looks like.
+
+### 3. Run the seed
 
 ```bash
+# Local
 node --env-file=.env.local prisma/seed.js
+
+# Production
+node --env-file=.env.production prisma/seed.js
 ```
 
-The seed uses `upsert` (slug as key), so re-running it is safe — it updates existing posts and adds new ones without duplicating.
+### 4. Deploy
 
-### 3. Deploy
-
-Commit your changes and push to `main`. Vercel will build and deploy automatically.
+Commit your changes (seed file + image) and push to `main`. Vercel builds automatically.
 
 ---
 
 ## Available categories
-
-Use one of these category / categoryKey pairs for consistency:
 
 | `category` (display) | `categoryKey` |
 |---|---|
@@ -81,7 +84,68 @@ Use one of these category / categoryKey pairs for consistency:
 | `"CQC Updates"` | `"cqc"` |
 | `"Community Events"` | `"community"` |
 
-To add a new category, just pick a new display name and key — the site renders whatever value is in the DB.
+To add a new category, use any display name and key — the site renders whatever value is in the database.
+
+---
+
+## Blog images
+
+Each post has two image fields stored in the database:
+
+| Field | Type | Purpose |
+|---|---|---|
+| `imageUrl` | `String` | Path to the thumbnail, e.g. `/images/25.jpg` |
+| `imageAlt` | `String` | Alt text shown to screen readers and on image failure |
+
+You can use any image you like — the field accepts any path under `public/`. Recommended workflow for new posts:
+
+1. Drop the image into `public/images/` as the next number (`25.jpg`, `26.jpg`, …)
+2. Run `bash scripts/compress.sh 25.jpg` to resize and compress it before committing
+3. Set `imageUrl: "/images/25.jpg"` and a descriptive `imageAlt` in the seed
+
+### Existing blog thumbnails
+
+| Image | Post |
+|---|---|
+| `/images/25.jpg` | Building trust through consistent support |
+| `/images/26.jpg` | Understanding CQC standards in supported living |
+| `/images/9.jpg` | Independence matters more than you might think |
+| `/images/14.jpg` | Summer gathering brings families together |
+| `/images/15.jpg` | Nutrition tips for staying well at home |
+| `/images/16.jpg` | Choosing a supported living provider: a family guide |
+| `/images/17.jpg` | Medication safety: a guide for families |
+| `/images/18.jpg` | How we prepare for a CQC inspection |
+| `/images/19.jpg` | Volunteers needed for our autumn coffee mornings |
+| `/images/20.jpg` | Funding your care: a plain-English guide |
+| `/images/21.jpg` | Reducing fall risks around the home |
+| `/images/22.jpg` | Celebrating our carers on Care Workers' Day |
+| `/images/23.jpg` | What 'person-centred' really means |
+
+For descriptions of what each image should look like, see [IMAGES.md](IMAGES.md).
+
+### Embedding an image inside post content
+
+Use this HTML pattern inside the `content` field:
+
+```html
+<figure>
+  <div class="img-frame ratio-2-1">
+    <img src="/images/your-image.jpg" alt="Descriptive alt text" />
+  </div>
+  <figcaption>Caption text here.</figcaption>
+</figure>
+```
+
+### Compressing images
+
+Run the local compression script before committing any new images:
+
+```bash
+bash scripts/compress.sh 25.jpg       # compress one file
+bash scripts/compress.sh               # compress all JPGs in public/images/
+```
+
+This script is gitignored (local use only). It uses macOS `sips`. On Linux, swap `sips` for ImageMagick (`convert`).
 
 ---
 
@@ -103,60 +167,20 @@ The `content` field is raw HTML rendered inside a `.prose` wrapper. Supported el
 | `<a href="...">` | Link |
 | `<figure>` + `<figcaption>` | Image with caption |
 
-### Embedding an image in post content
-
-```html
-<figure>
-  <div class="img-frame ratio-2-1">
-    <img src="/images/your-image.jpg" alt="Descriptive alt text" />
-  </div>
-  <figcaption>Caption text here.</figcaption>
-</figure>
-```
-
----
-
-## Blog images
-
-All images live in `public/images/` and are referenced as `/images/filename.jpg`.
-
-### Existing blog thumbnail files
-
-| File | Aspect ratio | Used as |
-|---|---|---|
-| `/images/blog-0.jpg` | 3:2 | General warmth / community scene |
-| `/images/blog-1.jpg` | 3:2 | Planning / digital / tablet scene |
-| `/images/blog-2.jpg` | 3:2 | Resident + support worker reviewing together |
-| `/images/feature-0.jpg` | 4:3 | Daily living / home scene |
-| `/images/feature-1.jpg` | 4:3 | Professional / desk / notes scene |
-| `/images/feature-2.jpg` | 4:3 | Life skills / practical task |
-| `/images/feature-3.jpg` | 4:3 | Community / outdoors |
-| `/images/feature-4.jpg` | 4:3 | Health / medication |
-
-### Adding a new image for a post
-
-1. Add your image file to `public/images/` (JPG, 80–85% quality, under 200 KB for thumbnails)
-2. Reference it in the seed post as `imageUrl: "/images/your-file.jpg"`
-3. Write a descriptive `imageAlt` — screen readers depend on this
-
-See [IMAGES.md](IMAGES.md) for full image guidance and naming conventions.
-
 ---
 
 ## Updating an existing post
 
-Edit the matching object in `prisma/seed.js` and re-run the seed. The `upsert` by slug will overwrite the existing database record with your updated content.
-
-If you also want the static fallback to match, update the same post in [`src/lib/staticPosts.js`](src/lib/staticPosts.js). The format is identical except `publishedAt` is a string (`"2026-06-07"`) rather than a `Date` object.
+Edit the matching object in `prisma/seed.js` and re-run the seed. The `upsert` by slug will overwrite the existing record with your updated content, including any new `imageUrl`.
 
 ---
 
 ## Deleting a post
 
-The seed script does not delete posts that no longer appear in its array. To remove a post from the database, run:
+The seed does not delete posts that no longer appear in its array. To remove one:
 
 ```bash
-node --env-file=.env.local -e "
+node --env-file=.env.production -e "
 const { PrismaClient } = require('./node_modules/@prisma/client')
 const p = new PrismaClient()
 p.post.delete({ where: { slug: 'the-post-slug' } })
@@ -164,31 +188,30 @@ p.post.delete({ where: { slug: 'the-post-slug' } })
 "
 ```
 
-Then remove it from `prisma/seed.js` (and `staticPosts.js` if it appears there too).
+Then remove it from `prisma/seed.js`.
 
 ---
 
 ## Featured posts
 
-Set `featured: true` on one post to make it appear in the featured/hero slot on the blog list page. All other posts should have `featured: false`. Only one featured post is used at a time; if multiple are marked, the most recently published is used.
+Set `featured: true` on one post to place it in the hero slot on the blog list page. Only one featured post is used at a time — if multiple are marked, the most recently published wins.
 
 ---
 
 ## Authors
 
-Authors are taken directly from the post fields — `authorName`, `authorInitials`, `authorRole`. They are not linked to the team config. Keep initials to two characters (used as the avatar fallback).
+Author fields (`authorName`, `authorInitials`, `authorRole`) are per-post and independent of the team config in `src/lib/config.js`. Keep `authorInitials` to two characters.
 
 ---
 
 ## Environments
 
-| Environment | DB used | How to seed |
-|---|---|---|
-| Local dev (with DB) | `.env.local` DB | `node --env-file=.env.local prisma/seed.js` |
-| Production (Vercel) | Vercel / Prisma Postgres | `node --env-file=.env.production prisma/seed.js` |
-| Local dev (no DB) | None — static fallback | Edit `src/lib/staticPosts.js` directly |
+| Environment | How to seed |
+|---|---|
+| Local (with DB) | `node --env-file=.env.local prisma/seed.js` |
+| Production | `node --env-file=.env.production prisma/seed.js` |
 
-Pull fresh Vercel env vars locally with:
+Pull fresh Vercel env vars locally:
 ```bash
 vercel env pull --environment=production .env.production
 ```

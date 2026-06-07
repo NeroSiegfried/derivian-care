@@ -180,6 +180,86 @@ const IMAGES = [
     prompt:
       "A supported living resident at a community café with friends or at a local community centre attending a class or social activity, active and natural, candid street or interior photography, diverse London community, warm daylight, conveys social inclusion and community belonging, photorealistic — distinct from an outdoor market or park scene",
   },
+
+  // ── Blog thumbnails (25–26) ──────────────────────────────────────────────
+  {
+    file: "25.jpg",
+    ratio: "3:2",
+    prompt:
+      "A supported living support worker and a resident sharing a natural unposed domestic leisure moment at home — laughing together while cooking, sitting side by side watching television, or playing a board game at a kitchen table, the scene feels like two people who genuinely know each other well, warm home interior, candid and real, diverse, photorealistic — distinct from a formal seated conversation on a sofa",
+  },
+  {
+    file: "26.jpg",
+    ratio: "3:2",
+    prompt:
+      "A family member and a supported living support coordinator sitting together at a kitchen table, the coordinator pointing to a section of a printed CQC inspection report or service rating document and explaining it calmly, the family member listening and leaning in, reassuring and informative atmosphere, warm domestic setting, photorealistic — distinct from a manager alone at a desk or a digital tablet scene",
+  },
+
+  // ── Blog post inline content figure (27) ────────────────────────────────
+  {
+    file: "27.jpg",
+    ratio: "2:1",
+    prompt:
+      "A support worker and a supported living resident doing something domestic together that shows easy comfortable familiarity built over time — making tea side by side, folding laundry together, or working in a shared kitchen — the mood is of two people who work together naturally and without fuss, warm kitchen or living-room light, photorealistic — distinct from a leisure or fun moment and from a seated conversation",
+  },
+
+  // ── About page: DeRivian Way panels (28–31) ─────────────────────────────
+  {
+    file: "28.jpg",
+    ratio: "3:2",
+    prompt:
+      "A supported living resident and a support coordinator sitting side by side at a coffee table in a home living room reviewing a personal support plan book or folder together, the resident is pointing to something they want changed, the coordinator is listening and taking notes on a notepad, equal collaborative atmosphere, warm domestic setting, photorealistic — distinct from a kitchen table practical task scene",
+  },
+  {
+    file: "29.jpg",
+    ratio: "3:2",
+    prompt:
+      "A small familiar group of two or three supported living support workers with a resident in a warm easy moment that conveys continuity and long familiarity — chatting in the hallway of the resident's home, or a relaxed handover conversation at the front door, casual and unhurried, the resident is at ease with these people, photorealistic — distinct from a resident doing a domestic task alone with a worker in the background",
+  },
+  {
+    file: "30.jpg",
+    ratio: "3:2",
+    prompt:
+      "A culturally diverse scene — a support worker and a supported living resident of clearly different cultural backgrounds sharing a culturally specific warm moment together: cooking a dish from the resident's cultural heritage, celebrating a cultural occasion, or the resident showing the support worker photographs or objects that represent their background, respectful and joyful, warm domestic setting, photorealistic — distinct from an outdoor London market or park scene",
+  },
+  {
+    file: "31.jpg",
+    ratio: "3:2",
+    prompt:
+      "A support worker holding a smartphone or tablet in a supported living resident's home, quietly logging a care update or checking a visit schedule, efficient and unobtrusive — in the background the resident is visible carrying on with their day, making tea or reading, the digital tool is clearly a background enabler not a barrier to human interaction, warm residential setting, photorealistic — distinct from two professionals at a desk reviewing plans together",
+  },
+
+  // ── Services page panels (32–36) ────────────────────────────────────────
+  {
+    file: "32.jpg",
+    ratio: "3:2",
+    prompt:
+      "A supported living resident doing a specific domestic task they have recently learned to manage independently — paying a bill online at a laptop, carefully separating recycling, or making their bed — a support worker is visible nearby but clearly not intervening, letting the person do it themselves, the resident looks focused and capable, warm home setting, photorealistic — distinct from a resident cooking or doing groceries with a worker in the background",
+  },
+  {
+    file: "33.jpg",
+    ratio: "3:2",
+    prompt:
+      "A supported living resident and a support worker at a bus stop or on a bus together, the resident checking their route on their own phone, the support worker beside them but letting the resident navigate, real public transport setting, candid and practical, conveys a real-world life skill in action, diverse London context, photorealistic — distinct from a kitchen table budget or recipe scene",
+  },
+  {
+    file: "34.jpg",
+    ratio: "3:2",
+    prompt:
+      "A supported living resident at a local community centre, library or adult learning class, participating in a structured group activity — a craft group, a book club, a job-readiness session or a creative workshop — alongside other community members, the resident is engaged and participating, warm community interior, photorealistic — distinct from an outdoor market or park scene and from a café social scene",
+  },
+  {
+    file: "35.jpg",
+    ratio: "3:2",
+    prompt:
+      "A support worker and a supported living resident sitting together in a GP surgery waiting room, or at home preparing for a health appointment — the support worker helping the resident review a list of questions to ask the doctor, or going over a medication schedule before leaving the house, calm and organised, joined-up health support, photorealistic — distinct from a kitchen table medication review and from a healthy cooking scene",
+  },
+  {
+    file: "36.jpg",
+    ratio: "4:3",
+    prompt:
+      "A social worker or NHS continuing healthcare commissioner sitting across from a supported living service manager in a professional meeting room or office, reviewing a care placement document or service specification together, smart business casual clothing, a clearly professional context with printed documents and a laptop on the table, photorealistic — distinct from two internal care staff at a desk with a laptop in a home-office setting",
+  },
 ]
 
 async function generateImage({ file, ratio, prompt }) {
