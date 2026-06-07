@@ -1,13 +1,4 @@
-export const dynamic = "force-dynamic"
-
-function esc(str) {
-  return String(str ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#x27;")
-}
+import { esc } from "@/lib/escapeHtml"
 
 export async function POST(req) {
   const body = await req.json().catch(() => ({}))
