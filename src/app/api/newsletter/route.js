@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/db"
 import { randomBytes } from "crypto"
+import { esc } from "@/lib/escapeHtml"
 
 export async function POST(req) {
   const body = await req.json().catch(() => ({}))
@@ -15,10 +16,13 @@ export async function POST(req) {
   }
 
   const fromAddress = process.env.FROM_EMAIL || "DeRivian Care <noreply@derivian.co.uk>"
+  const toAddress = process.env.CONTACT_EMAIL || "info@derivian.co.uk"
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://derivian.co.uk"
 
   const token = randomBytes(32).toString("hex")
   const unsubscribeUrl = `${siteUrl}/api/unsubscribe?token=${token}`
+
+  const existing = await prisma.subscriber.findUnique({ where: { email } })
 
   try {
     const response = await fetch("https://api.resend.com/emails", {
@@ -50,6 +54,23 @@ export async function POST(req) {
       update: {},
       create: { email, unsubscribeToken: token },
     })
+
+    if (!existing) {
+      const notifyResponse = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from: fromAddress,
+          to: [toAddress],
+          subject: "New newsletter subscriber",
+          html: `<p>New newsletter subscription: <a href="mailto:${esc(email)}">${esc(email)}</a></p>`,
+        }),
+      })
+
+      if (!notifyResponse.ok) {
+        console.error("Resend admin notification error:", await notifyResponse.text())
+      }
+    }
 
     return Response.json({ success: true })
   } catch (err) {
