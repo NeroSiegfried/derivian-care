@@ -354,6 +354,18 @@ Supported living imagery should feel distinct from domiciliary care or care home
 
 ---
 
+## File naming conventions
+
+Each numbered image in `public/images/` may have these companion files alongside `N.jpg`:
+
+- **`N.jpg`** — the version served on the site. This is the only one referenced in code.
+- **`N.original.jpg`** — the full camera-resolution original, kept so the live version can be recompressed later without re-sourcing the image. Never reference these in code or delete them.
+- **`N.compressed.jpg`** — only present for images whose `N.jpg` is a small, thumbnail-tier compression (currently `2`, `3`, `12-2`, `14-2`, `24`). This is a higher-quality (~4K, q88) version kept in case the image is reused somewhere larger than its current grid-card placement.
+
+When sourcing a new photo for an existing slot, replace `N.original.jpg` and recompress from there to keep this chain intact.
+
+---
+
 ## Adding a new image
 
 1. Drop the file into `public/images/` as the next number after 36
