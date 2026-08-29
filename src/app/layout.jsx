@@ -2,6 +2,7 @@ import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
 import SvgSprite from "@/components/SvgSprite"
 import RevealObserver from "@/components/RevealObserver"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const title = "DeRivian Care — Supported living across London"
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <RevealObserver />
+        <Analytics />
       </body>
     </html>
   )
